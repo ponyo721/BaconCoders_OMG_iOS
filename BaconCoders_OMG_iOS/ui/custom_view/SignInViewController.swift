@@ -7,8 +7,8 @@
 
 import UIKit
 
-class SignInViewController: UIViewController {
-    private let navigationView : CustomNavigationVC = CustomNavigationVC()
+class SignInViewController: UIViewController, CustomNavigationVCDelegate {
+    var navigationView : CustomNavigationVC?
 
     @IBOutlet weak var signInLabel: UILabel!
     @IBOutlet weak var orLabel: UILabel!
@@ -27,9 +27,11 @@ class SignInViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        navigationView.isShowGoBack = true
-        navigationView.view.frame.origin = CGPoint(x: 0, y: navigationView.view.frame.height)
-        self.view.addSubview(navigationView.view)
+        if navigationView != nil {
+            navigationView!.delegate = self
+            navigationView!.view.frame.origin = CGPoint(x: 0, y: navigationView!.view.frame.height)
+            self.view.addSubview(navigationView!.view)
+        }
     }
     
     //MARK: - ui action -
@@ -52,6 +54,17 @@ class SignInViewController: UIViewController {
     @IBAction func signUpButtonTapped(_ sender: UIButton) {
         print("[SignInViewController] signUpButtonTapped")
         
+    }
+    
+    //MARK: - CustomNavigationVCDelegate -
+    
+    func actiongoBackBtnTapped(_ backScene: UIViewController) {
+        print("[SignInViewController] actiongoBackBtnTapped")
+        
+        backScene.modalTransitionStyle = .coverVertical
+        // 전환된 화면이 보여지는 방법 설정 (fullScreen)
+        backScene.modalPresentationStyle = .fullScreen
+        self.present(backScene, animated: true, completion: nil)
     }
 }
 

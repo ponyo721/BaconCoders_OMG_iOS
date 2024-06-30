@@ -20,12 +20,6 @@ class EntranceViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        let guide = view.safeAreaLayoutGuide
-//        let height = guide.layoutFrame.size.height
-//        let width = guide.layoutFrame.size.width
-//        print("[EntranceViewController] width : \(width), height : \(height)")
-//        print("[EntranceViewController] signUpButtonTapped")
-        
         navigationView.view.frame.origin = CGPoint(x: 0, y: navigationView.view.frame.height)
         self.view.addSubview(navigationView.view)
     }
@@ -54,6 +48,10 @@ class EntranceViewController: UIViewController {
     
     func showSignInVC() {
         if let signInVC = self.storyboard?.instantiateViewController(withIdentifier: "SignInViewController") as? SignInViewController {
+            
+            signInVC.navigationView = CustomNavigationVC()
+            signInVC.navigationView?.isShowGoBack = true
+            signInVC.navigationView?.backScene = self
             
             // 화면 전환 애니메이션 설정
             signInVC.modalTransitionStyle = .coverVertical

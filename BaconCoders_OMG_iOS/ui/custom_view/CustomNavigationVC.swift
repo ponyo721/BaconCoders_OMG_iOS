@@ -7,8 +7,14 @@
 
 import UIKit
 
+protocol CustomNavigationVCDelegate: AnyObject {
+    func actiongoBackBtnTapped(_ backScene: UIViewController)
+}
+
 class CustomNavigationVC: UIViewController{
+    var delegate : CustomNavigationVCDelegate?
     var isShowGoBack : Bool = false;
+    var backScene : UIViewController?
     
     //MARK: - IBOutlet -
     @IBOutlet weak var goBackBtn: UIButton!
@@ -27,5 +33,9 @@ class CustomNavigationVC: UIViewController{
     //MARK: - ui action -
     @IBAction func goBackBtnTapped(_ sender: Any) {
         print("[CustomNavigationVC] goBackBtnTapped")
+        
+        if backScene != nil {
+            self.delegate?.actiongoBackBtnTapped(backScene!)
+        }
     }
 }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0CDFD8664068EBF0B5984878 /* Pods_BaconCoders_OMG_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CD64A175D64DC12E351842F /* Pods_BaconCoders_OMG_iOS.framework */; };
 		25A7E84C2C2FD99E0022C8CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A7E84B2C2FD99E0022C8CD /* AppDelegate.swift */; };
 		25A7E84E2C2FD99E0022C8CD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A7E84D2C2FD99E0022C8CD /* SceneDelegate.swift */; };
 		25A7E8532C2FD99E0022C8CD /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 25A7E8522C2FD99E0022C8CD /* Base */; };
@@ -20,6 +21,10 @@
 		25A7E8BD2C3022370022C8CD /* EntranceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A7E8BC2C3022370022C8CD /* EntranceViewController.swift */; };
 		25A7E8C02C3029640022C8CD /* CustomNavigationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A7E8BF2C3029640022C8CD /* CustomNavigationVC.swift */; };
 		25A7E8C22C30297A0022C8CD /* CustomNavigationVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25A7E8C12C30297A0022C8CD /* CustomNavigationVC.xib */; };
+		25A7E8C42C312BE60022C8CD /* OMGManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A7E8C32C312BE60022C8CD /* OMGManager.swift */; };
+		25A7E8C62C312BEF0022C8CD /* UIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A7E8C52C312BEF0022C8CD /* UIManager.swift */; };
+		672D7BC2A80129334768C72C /* Pods_BaconCoders_OMG_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C0CA70FE7A2704A7C5148A1 /* Pods_BaconCoders_OMG_iOSTests.framework */; };
+		A78DEE450A61C734A4B8746A /* Pods_BaconCoders_OMG_iOS_BaconCoders_OMG_iOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE833A7074A57B444C861F68 /* Pods_BaconCoders_OMG_iOS_BaconCoders_OMG_iOSUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0CD64A175D64DC12E351842F /* Pods_BaconCoders_OMG_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BaconCoders_OMG_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		25A7E8482C2FD99E0022C8CD /* BaconCoders_OMG_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BaconCoders_OMG_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		25A7E84B2C2FD99E0022C8CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		25A7E84D2C2FD99E0022C8CD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -57,6 +63,16 @@
 		25A7E8BC2C3022370022C8CD /* EntranceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntranceViewController.swift; sourceTree = "<group>"; };
 		25A7E8BF2C3029640022C8CD /* CustomNavigationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationVC.swift; sourceTree = "<group>"; };
 		25A7E8C12C30297A0022C8CD /* CustomNavigationVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomNavigationVC.xib; sourceTree = "<group>"; };
+		25A7E8C32C312BE60022C8CD /* OMGManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OMGManager.swift; sourceTree = "<group>"; };
+		25A7E8C52C312BEF0022C8CD /* UIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIManager.swift; sourceTree = "<group>"; };
+		2C0CA70FE7A2704A7C5148A1 /* Pods_BaconCoders_OMG_iOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BaconCoders_OMG_iOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F9ABCF8535531A4E77F50B4 /* Pods-BaconCoders_OMG_iOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaconCoders_OMG_iOSTests.release.xcconfig"; path = "Target Support Files/Pods-BaconCoders_OMG_iOSTests/Pods-BaconCoders_OMG_iOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		3EA50D96DD5CA688F95DD9D1 /* Pods-BaconCoders_OMG_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaconCoders_OMG_iOS.release.xcconfig"; path = "Target Support Files/Pods-BaconCoders_OMG_iOS/Pods-BaconCoders_OMG_iOS.release.xcconfig"; sourceTree = "<group>"; };
+		657F93D9FC8AA093DEDD3750 /* Pods-BaconCoders_OMG_iOS-BaconCoders_OMG_iOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaconCoders_OMG_iOS-BaconCoders_OMG_iOSUITests.release.xcconfig"; path = "Target Support Files/Pods-BaconCoders_OMG_iOS-BaconCoders_OMG_iOSUITests/Pods-BaconCoders_OMG_iOS-BaconCoders_OMG_iOSUITests.release.xcconfig"; sourceTree = "<group>"; };
+		6FC8980CF4D188302492B9CC /* Pods-BaconCoders_OMG_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaconCoders_OMG_iOS.debug.xcconfig"; path = "Target Support Files/Pods-BaconCoders_OMG_iOS/Pods-BaconCoders_OMG_iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		8BDA3189DEDE5A51E1C6862B /* Pods-BaconCoders_OMG_iOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaconCoders_OMG_iOSTests.debug.xcconfig"; path = "Target Support Files/Pods-BaconCoders_OMG_iOSTests/Pods-BaconCoders_OMG_iOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8DA867FF33D49C758F9BF874 /* Pods-BaconCoders_OMG_iOS-BaconCoders_OMG_iOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaconCoders_OMG_iOS-BaconCoders_OMG_iOSUITests.debug.xcconfig"; path = "Target Support Files/Pods-BaconCoders_OMG_iOS-BaconCoders_OMG_iOSUITests/Pods-BaconCoders_OMG_iOS-BaconCoders_OMG_iOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		EE833A7074A57B444C861F68 /* Pods_BaconCoders_OMG_iOS_BaconCoders_OMG_iOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BaconCoders_OMG_iOS_BaconCoders_OMG_iOSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CDFD8664068EBF0B5984878 /* Pods_BaconCoders_OMG_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				672D7BC2A80129334768C72C /* Pods_BaconCoders_OMG_iOSTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,12 +96,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A78DEE450A61C734A4B8746A /* Pods_BaconCoders_OMG_iOS_BaconCoders_OMG_iOSUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		054177FA6DCE0645A6799E39 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6FC8980CF4D188302492B9CC /* Pods-BaconCoders_OMG_iOS.debug.xcconfig */,
+				3EA50D96DD5CA688F95DD9D1 /* Pods-BaconCoders_OMG_iOS.release.xcconfig */,
+				8DA867FF33D49C758F9BF874 /* Pods-BaconCoders_OMG_iOS-BaconCoders_OMG_iOSUITests.debug.xcconfig */,
+				657F93D9FC8AA093DEDD3750 /* Pods-BaconCoders_OMG_iOS-BaconCoders_OMG_iOSUITests.release.xcconfig */,
+				8BDA3189DEDE5A51E1C6862B /* Pods-BaconCoders_OMG_iOSTests.debug.xcconfig */,
+				2F9ABCF8535531A4E77F50B4 /* Pods-BaconCoders_OMG_iOSTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		25A7E83F2C2FD99E0022C8CD = {
 			isa = PBXGroup;
 			children = (
@@ -91,6 +124,8 @@
 				25A7E8612C2FD9A00022C8CD /* BaconCoders_OMG_iOSTests */,
 				25A7E86B2C2FD9A00022C8CD /* BaconCoders_OMG_iOSUITests */,
 				25A7E8492C2FD99E0022C8CD /* Products */,
+				054177FA6DCE0645A6799E39 /* Pods */,
+				5CFE48E9EA672701112D3C0C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -109,6 +144,7 @@
 			children = (
 				25A7E84B2C2FD99E0022C8CD /* AppDelegate.swift */,
 				25A7E84D2C2FD99E0022C8CD /* SceneDelegate.swift */,
+				25A7E8C32C312BE60022C8CD /* OMGManager.swift */,
 				25A7E87D2C2FDC3D0022C8CD /* ui */,
 				25A7E8512C2FD99E0022C8CD /* Main.storyboard */,
 				25A7E8542C2FD9A00022C8CD /* Assets.xcassets */,
@@ -139,9 +175,7 @@
 			isa = PBXGroup;
 			children = (
 				25A7E8BE2C3029090022C8CD /* custom_view */,
-				25A7E8BC2C3022370022C8CD /* EntranceViewController.swift */,
-				25A7E87B2C2FDB440022C8CD /* SignInViewController.swift */,
-				25A7E87E2C2FDC4A0022C8CD /* SignUpViewController.swift */,
+				25A7E8C52C312BEF0022C8CD /* UIManager.swift */,
 			);
 			path = ui;
 			sourceTree = "<group>";
@@ -149,10 +183,23 @@
 		25A7E8BE2C3029090022C8CD /* custom_view */ = {
 			isa = PBXGroup;
 			children = (
+				25A7E8BC2C3022370022C8CD /* EntranceViewController.swift */,
+				25A7E87B2C2FDB440022C8CD /* SignInViewController.swift */,
+				25A7E87E2C2FDC4A0022C8CD /* SignUpViewController.swift */,
 				25A7E8BF2C3029640022C8CD /* CustomNavigationVC.swift */,
 				25A7E8C12C30297A0022C8CD /* CustomNavigationVC.xib */,
 			);
 			path = custom_view;
+			sourceTree = "<group>";
+		};
+		5CFE48E9EA672701112D3C0C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0CD64A175D64DC12E351842F /* Pods_BaconCoders_OMG_iOS.framework */,
+				EE833A7074A57B444C861F68 /* Pods_BaconCoders_OMG_iOS_BaconCoders_OMG_iOSUITests.framework */,
+				2C0CA70FE7A2704A7C5148A1 /* Pods_BaconCoders_OMG_iOSTests.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,9 +209,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 25A7E8722C2FD9A00022C8CD /* Build configuration list for PBXNativeTarget "BaconCoders_OMG_iOS" */;
 			buildPhases = (
+				A0A21E5AE7793D2D616E8E3B /* [CP] Check Pods Manifest.lock */,
 				25A7E8442C2FD99E0022C8CD /* Sources */,
 				25A7E8452C2FD99E0022C8CD /* Frameworks */,
 				25A7E8462C2FD99E0022C8CD /* Resources */,
+				EDE7B4C0ED43EE43581C3A1E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -179,6 +228,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 25A7E8752C2FD9A00022C8CD /* Build configuration list for PBXNativeTarget "BaconCoders_OMG_iOSTests" */;
 			buildPhases = (
+				4A3A3067E95051AB55CE8F55 /* [CP] Check Pods Manifest.lock */,
 				25A7E85A2C2FD9A00022C8CD /* Sources */,
 				25A7E85B2C2FD9A00022C8CD /* Frameworks */,
 				25A7E85C2C2FD9A00022C8CD /* Resources */,
@@ -197,9 +247,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 25A7E8782C2FD9A00022C8CD /* Build configuration list for PBXNativeTarget "BaconCoders_OMG_iOSUITests" */;
 			buildPhases = (
+				7DAF9FE3CDD2BB6C11FAEA3B /* [CP] Check Pods Manifest.lock */,
 				25A7E8642C2FD9A00022C8CD /* Sources */,
 				25A7E8652C2FD9A00022C8CD /* Frameworks */,
 				25A7E8662C2FD9A00022C8CD /* Resources */,
+				3F10AE95B40E79FE5ADDACF7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -282,13 +334,118 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3F10AE95B40E79FE5ADDACF7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BaconCoders_OMG_iOS-BaconCoders_OMG_iOSUITests/Pods-BaconCoders_OMG_iOS-BaconCoders_OMG_iOSUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BaconCoders_OMG_iOS-BaconCoders_OMG_iOSUITests/Pods-BaconCoders_OMG_iOS-BaconCoders_OMG_iOSUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BaconCoders_OMG_iOS-BaconCoders_OMG_iOSUITests/Pods-BaconCoders_OMG_iOS-BaconCoders_OMG_iOSUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4A3A3067E95051AB55CE8F55 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BaconCoders_OMG_iOSTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7DAF9FE3CDD2BB6C11FAEA3B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BaconCoders_OMG_iOS-BaconCoders_OMG_iOSUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A0A21E5AE7793D2D616E8E3B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BaconCoders_OMG_iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EDE7B4C0ED43EE43581C3A1E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BaconCoders_OMG_iOS/Pods-BaconCoders_OMG_iOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BaconCoders_OMG_iOS/Pods-BaconCoders_OMG_iOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BaconCoders_OMG_iOS/Pods-BaconCoders_OMG_iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		25A7E8442C2FD99E0022C8CD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				25A7E87C2C2FDB440022C8CD /* SignInViewController.swift in Sources */,
+				25A7E8C42C312BE60022C8CD /* OMGManager.swift in Sources */,
 				25A7E84C2C2FD99E0022C8CD /* AppDelegate.swift in Sources */,
+				25A7E8C62C312BEF0022C8CD /* UIManager.swift in Sources */,
 				25A7E87F2C2FDC4A0022C8CD /* SignUpViewController.swift in Sources */,
 				25A7E8C02C3029640022C8CD /* CustomNavigationVC.swift in Sources */,
 				25A7E84E2C2FD99E0022C8CD /* SceneDelegate.swift in Sources */,
@@ -469,6 +626,7 @@
 		};
 		25A7E8732C2FD9A00022C8CD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6FC8980CF4D188302492B9CC /* Pods-BaconCoders_OMG_iOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -482,6 +640,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -497,6 +656,7 @@
 		};
 		25A7E8742C2FD9A00022C8CD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3EA50D96DD5CA688F95DD9D1 /* Pods-BaconCoders_OMG_iOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -510,6 +670,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -525,6 +686,7 @@
 		};
 		25A7E8762C2FD9A00022C8CD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8BDA3189DEDE5A51E1C6862B /* Pods-BaconCoders_OMG_iOSTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -545,6 +707,7 @@
 		};
 		25A7E8772C2FD9A00022C8CD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F9ABCF8535531A4E77F50B4 /* Pods-BaconCoders_OMG_iOSTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -565,6 +728,7 @@
 		};
 		25A7E8792C2FD9A00022C8CD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8DA867FF33D49C758F9BF874 /* Pods-BaconCoders_OMG_iOS-BaconCoders_OMG_iOSUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -583,6 +747,7 @@
 		};
 		25A7E87A2C2FD9A00022C8CD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 657F93D9FC8AA093DEDD3750 /* Pods-BaconCoders_OMG_iOS-BaconCoders_OMG_iOSUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
