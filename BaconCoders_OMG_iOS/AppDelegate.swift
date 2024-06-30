@@ -7,6 +7,8 @@
 
 import UIKit
 import GoogleSignIn
+import KakaoSDKCommon
+import KakaoSDKAuth
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -22,22 +24,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         sleep(3)
         #endif
         
+        // kakao init
+        let nativeAppKey = Bundle.main.infoDictionary?["KAKAO_NATIVE_APP_KEY"] ?? ""
+        KakaoSDK.initSDK(appKey: nativeAppKey as! String)
         
         return true
     }
     
     func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
-      var handled: Bool
-
-      handled = GIDSignIn.sharedInstance.handle(url)
-      if handled {
+        
+        if GIDSignIn.sharedInstance.handle(url) != true {
+            return false
+        }
+        
+        if (AuthApi.isKakaoTalkLoginUrl(url) != true || AuthController.handleOpenUrl(url: url) != true) {
+            return false
+        }
+        
         return true
-      }
-
-      // Handle other custom URL types.
-
-      // If not handled by this app, return false.
-      return false
     }
 
     // MARK: UISceneSession Lifecycle

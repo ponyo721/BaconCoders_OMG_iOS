@@ -7,8 +7,11 @@
 
 import Foundation
 import GoogleSignIn
+import KakaoSDKCommon
+import KakaoSDKAuth
 
 import UIKit
+import KakaoSDKUser
 
 class EntranceViewController: UIViewController {
     private let navigationView : CustomNavigationVC = CustomNavigationVC()
@@ -28,8 +31,8 @@ class EntranceViewController: UIViewController {
         // google
         
         // 버튼 스타일 설정
-//        btnGoogleLogin.colorScheme = .light
-//        btnGoogleLogin.style = .wide
+        //        btnGoogleLogin.colorScheme = .light
+        //        btnGoogleLogin.style = .wide
         
         // 기존에 로그인한 경우 바로 페이지 이동
         checkState()
@@ -43,6 +46,12 @@ class EntranceViewController: UIViewController {
     
     @IBAction func signInWithAppleButtonTapped(_ sender: UIButton) {
         print("[EntranceViewController] signInWithAppleButtonTapped")
+        
+        if validateKakaoLogin() {
+            print("[EntranceViewController] validateKakaoLogin ok")
+        }else{
+            print("[EntranceViewController] validateKakaoLogin fail")
+        }
     }
     
     @IBAction func signInWithGoogleUpButtonTapped(_ sender: UIButton) {
@@ -135,4 +144,33 @@ extension EntranceViewController {
     func moveMyPage(_ data:UserData) {
         print("moveMyPage")
     }
+}
+
+//MARK: - Kakao Login
+extension EntranceViewController {
+    
+    func validateKakaoLogin() -> Bool {
+        var isValidate : Bool = false
+        
+        // 카카오톡 설치 여부 확인
+//        if (UserApi.isKakaoTalkLoginAvailable()) {
+            UserApi.shared.loginWithKakaoTalk {(oauthToken, error) in
+                if let error = error {
+                    print(error)
+                }
+                else {
+                    isValidate = true
+                    print("loginWithKakaoTalk() success.")
+                    
+                    //do something
+                    _ = oauthToken
+                }
+            }
+//        }
+        
+        return isValidate
+    }
+    
+    
+    
 }

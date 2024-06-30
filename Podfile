@@ -5,7 +5,12 @@ target 'BaconCoders_OMG_iOS' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
-pod 'GoogleSignIn'
+  # Google
+  pod 'GoogleSignIn'
+  
+  # Kakao
+  pod 'KakaoSDKAuth'  # 사용자 인증
+  pod 'KakaoSDKUser'  # 카카오 로그인, 사용자 관리
 
   # Pods for BaconCoders_OMG_iOS
 
