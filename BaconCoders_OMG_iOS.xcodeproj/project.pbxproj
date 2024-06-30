@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		0CDFD8664068EBF0B5984878 /* Pods_BaconCoders_OMG_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CD64A175D64DC12E351842F /* Pods_BaconCoders_OMG_iOS.framework */; };
+		255F54C02C313E1C0004722A /* NetWorkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255F54BF2C313E1C0004722A /* NetWorkManager.swift */; };
+		255F54C42C313F5C0004722A /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255F54C32C313F5C0004722A /* HTTPClient.swift */; };
+		255F54C82C3143C40004722A /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255F54C72C3143C40004722A /* UserData.swift */; };
+		255F54CA2C316B910004722A /* Config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 255F54C92C316B910004722A /* Config.xcconfig */; };
 		25A7E84C2C2FD99E0022C8CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A7E84B2C2FD99E0022C8CD /* AppDelegate.swift */; };
 		25A7E84E2C2FD99E0022C8CD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A7E84D2C2FD99E0022C8CD /* SceneDelegate.swift */; };
 		25A7E8532C2FD99E0022C8CD /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 25A7E8522C2FD99E0022C8CD /* Base */; };
@@ -46,6 +50,10 @@
 
 /* Begin PBXFileReference section */
 		0CD64A175D64DC12E351842F /* Pods_BaconCoders_OMG_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BaconCoders_OMG_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		255F54BF2C313E1C0004722A /* NetWorkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetWorkManager.swift; sourceTree = "<group>"; };
+		255F54C32C313F5C0004722A /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		255F54C72C3143C40004722A /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		255F54C92C316B910004722A /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		25A7E8482C2FD99E0022C8CD /* BaconCoders_OMG_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BaconCoders_OMG_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		25A7E84B2C2FD99E0022C8CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		25A7E84D2C2FD99E0022C8CD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -113,13 +121,46 @@
 				8BDA3189DEDE5A51E1C6862B /* Pods-BaconCoders_OMG_iOSTests.debug.xcconfig */,
 				2F9ABCF8535531A4E77F50B4 /* Pods-BaconCoders_OMG_iOSTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		255F54C12C313EFF0004722A /* network */ = {
+			isa = PBXGroup;
+			children = (
+				255F54C22C313F220004722A /* network_module */,
+				255F54BF2C313E1C0004722A /* NetWorkManager.swift */,
+			);
+			path = network;
+			sourceTree = "<group>";
+		};
+		255F54C22C313F220004722A /* network_module */ = {
+			isa = PBXGroup;
+			children = (
+				255F54C32C313F5C0004722A /* HTTPClient.swift */,
+			);
+			path = network_module;
+			sourceTree = "<group>";
+		};
+		255F54C52C3143B00004722A /* common */ = {
+			isa = PBXGroup;
+			children = (
+				255F54C62C3143BB0004722A /* data_model */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
+		255F54C62C3143BB0004722A /* data_model */ = {
+			isa = PBXGroup;
+			children = (
+				255F54C72C3143C40004722A /* UserData.swift */,
+			);
+			path = data_model;
 			sourceTree = "<group>";
 		};
 		25A7E83F2C2FD99E0022C8CD = {
 			isa = PBXGroup;
 			children = (
+				255F54C92C316B910004722A /* Config.xcconfig */,
 				25A7E84A2C2FD99E0022C8CD /* BaconCoders_OMG_iOS */,
 				25A7E8612C2FD9A00022C8CD /* BaconCoders_OMG_iOSTests */,
 				25A7E86B2C2FD9A00022C8CD /* BaconCoders_OMG_iOSUITests */,
@@ -142,14 +183,16 @@
 		25A7E84A2C2FD99E0022C8CD /* BaconCoders_OMG_iOS */ = {
 			isa = PBXGroup;
 			children = (
+				255F54C52C3143B00004722A /* common */,
 				25A7E84B2C2FD99E0022C8CD /* AppDelegate.swift */,
 				25A7E84D2C2FD99E0022C8CD /* SceneDelegate.swift */,
 				25A7E8C32C312BE60022C8CD /* OMGManager.swift */,
-				25A7E87D2C2FDC3D0022C8CD /* ui */,
-				25A7E8512C2FD99E0022C8CD /* Main.storyboard */,
 				25A7E8542C2FD9A00022C8CD /* Assets.xcassets */,
-				25A7E8562C2FD9A00022C8CD /* LaunchScreen.storyboard */,
 				25A7E8592C2FD9A00022C8CD /* Info.plist */,
+				25A7E8562C2FD9A00022C8CD /* LaunchScreen.storyboard */,
+				25A7E8512C2FD99E0022C8CD /* Main.storyboard */,
+				255F54C12C313EFF0004722A /* network */,
+				25A7E87D2C2FDC3D0022C8CD /* ui */,
 			);
 			path = BaconCoders_OMG_iOS;
 			sourceTree = "<group>";
@@ -312,6 +355,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				25A7E8552C2FD9A00022C8CD /* Assets.xcassets in Resources */,
+				255F54CA2C316B910004722A /* Config.xcconfig in Resources */,
 				25A7E8582C2FD9A00022C8CD /* Base in Resources */,
 				25A7E8532C2FD99E0022C8CD /* Base in Resources */,
 				25A7E8C22C30297A0022C8CD /* CustomNavigationVC.xib in Resources */,
@@ -447,6 +491,9 @@
 				25A7E84C2C2FD99E0022C8CD /* AppDelegate.swift in Sources */,
 				25A7E8C62C312BEF0022C8CD /* UIManager.swift in Sources */,
 				25A7E87F2C2FDC4A0022C8CD /* SignUpViewController.swift in Sources */,
+				255F54C82C3143C40004722A /* UserData.swift in Sources */,
+				255F54C42C313F5C0004722A /* HTTPClient.swift in Sources */,
+				255F54C02C313E1C0004722A /* NetWorkManager.swift in Sources */,
 				25A7E8C02C3029640022C8CD /* CustomNavigationVC.swift in Sources */,
 				25A7E84E2C2FD99E0022C8CD /* SceneDelegate.swift in Sources */,
 				25A7E8BD2C3022370022C8CD /* EntranceViewController.swift in Sources */,
@@ -507,6 +554,7 @@
 /* Begin XCBuildConfiguration section */
 		25A7E8702C2FD9A00022C8CD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 255F54C92C316B910004722A /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -633,6 +681,8 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = DW83XL6B4B;
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BaconCoders_OMG_iOS/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -646,7 +696,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "bhpark.BaconCoders-OMG-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = com.baconcoders.omg;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -663,6 +713,8 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = DW83XL6B4B;
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BaconCoders_OMG_iOS/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -676,7 +728,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "bhpark.BaconCoders-OMG-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = com.baconcoders.omg;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
