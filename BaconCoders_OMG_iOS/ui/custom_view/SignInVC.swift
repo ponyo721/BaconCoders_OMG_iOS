@@ -1,5 +1,5 @@
 //
-//  SignInViewController.swift
+//  SignInVC.swift
 //  BaconCoders_OMG_iOS
 //
 //  Created by 박병호 on 6/29/24.
@@ -7,8 +7,15 @@
 
 import UIKit
 
-class SignInViewController: UIViewController, CustomNavigationVCDelegate {
+protocol SignInVCDelegate: AnyObject {
+    
+    // optional
+    func actionGoBack()
+}
+
+class SignInVC: UIViewController, CustomNavigationVCDelegate {
     var navigationView : CustomNavigationVC?
+    var delegate : SignInVCDelegate?
 
     @IBOutlet weak var signInLabel: UILabel!
     @IBOutlet weak var orLabel: UILabel!
@@ -37,34 +44,31 @@ class SignInViewController: UIViewController, CustomNavigationVCDelegate {
     //MARK: - ui action -
 
     @IBAction func signInButtonTapped(_ sender: UIButton) {
-        print("[SignInViewController] signInButtonTapped")
+        print("[SignInVC] signInButtonTapped")
         
     }
     
     @IBAction func signInWithAppleButtonTapped(_ sender: UIButton) {
-        print("[SignInViewController] signInWithAppleButtonTapped")
+        print("[SignInVC] signInWithKakaoButtonTapped")
         
     }
     
     @IBAction func signInWithGoogleButtonTapped(_ sender: UIButton) {
-        print("[SignInViewController] signInWithGoogleButtonTapped")
+        print("[SignInVC] signInWithKakaoButtonTapped")
         
     }
     
     @IBAction func signUpButtonTapped(_ sender: UIButton) {
-        print("[SignInViewController] signUpButtonTapped")
+        print("[SignInVC] signUpButtonTapped")
         
     }
     
     //MARK: - CustomNavigationVCDelegate -
     
-    func actiongoBackBtnTapped(_ backScene: UIViewController) {
-        print("[SignInViewController] actiongoBackBtnTapped")
+    func actiongoBackBtnTapped() {
+        print("[SignInVC] actiongoBackBtnTapped")
         
-        backScene.modalTransitionStyle = .coverVertical
-        // 전환된 화면이 보여지는 방법 설정 (fullScreen)
-        backScene.modalPresentationStyle = .fullScreen
-        self.present(backScene, animated: true, completion: nil)
+        self.delegate?.actionGoBack()
     }
 }
 

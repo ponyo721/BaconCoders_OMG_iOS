@@ -5,9 +5,38 @@
 //  Created by 박병호 on 6/30/24.
 //
 
-import Foundation
+import UIKit
+
+protocol NetWorkManagerDelegate: AnyObject {
+    
+}
 
 class NetWorkManager {
+    var delegate : NetWorkManagerDelegate?
+    
+    private let kakaoSignInModule : KakaoSignInModule = KakaoSignInModule()
+    private let googleSignInModule : GoogleSignInModule = GoogleSignInModule()
+    
+    func initalize(){
+        print("[NetWorkManager] initalize")
+    }
+    
+    func singInGoogle(_ vc:UIViewController) -> Bool {
+        print("[NetWorkManager] singInGoogle")
+        return googleSignInModule.googleLoginWithPresenting(vc)
+    }
+    
+    func singInKakao() -> Bool {
+        print("[NetWorkManager] singInKakao")
+        return kakaoSignInModule.validateKakaoLogin()
+    }
+    
+    
+    
+    
+    
+//    let httpClient : HTTPClient = HTTPClient()
+    
     
     //    // GET 요청 예제
     //    if let url = URL(string: "https://jsonplaceholder.typicode.com/posts/1") {
