@@ -19,6 +19,8 @@
 		255F54D42C324F940004722A /* SignInVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 255F54D32C324F940004722A /* SignInVC.xib */; };
 		255F54D72C36366A0004722A /* CommonPushBtnVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255F54D62C36366A0004722A /* CommonPushBtnVC.swift */; };
 		255F54D92C36368B0004722A /* CommonPushBtnVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 255F54D82C36368B0004722A /* CommonPushBtnVC.xib */; };
+		255F54DC2C363A800004722A /* TestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255F54DB2C363A800004722A /* TestVC.swift */; };
+		255F54DE2C363A9C0004722A /* TestVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 255F54DD2C363A9C0004722A /* TestVC.xib */; };
 		25A7E84C2C2FD99E0022C8CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A7E84B2C2FD99E0022C8CD /* AppDelegate.swift */; };
 		25A7E84E2C2FD99E0022C8CD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A7E84D2C2FD99E0022C8CD /* SceneDelegate.swift */; };
 		25A7E8552C2FD9A00022C8CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25A7E8542C2FD9A00022C8CD /* Assets.xcassets */; };
@@ -67,6 +69,8 @@
 		255F54D32C324F940004722A /* SignInVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignInVC.xib; sourceTree = "<group>"; };
 		255F54D62C36366A0004722A /* CommonPushBtnVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonPushBtnVC.swift; sourceTree = "<group>"; };
 		255F54D82C36368B0004722A /* CommonPushBtnVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommonPushBtnVC.xib; sourceTree = "<group>"; };
+		255F54DB2C363A800004722A /* TestVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestVC.swift; sourceTree = "<group>"; };
+		255F54DD2C363A9C0004722A /* TestVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestVC.xib; sourceTree = "<group>"; };
 		25A7E8482C2FD99E0022C8CD /* BaconCoders_OMG_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BaconCoders_OMG_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		25A7E84B2C2FD99E0022C8CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		25A7E84D2C2FD99E0022C8CD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -182,6 +186,15 @@
 			path = ui;
 			sourceTree = "<group>";
 		};
+		255F54DA2C363A6D0004722A /* test_ui */ = {
+			isa = PBXGroup;
+			children = (
+				255F54DB2C363A800004722A /* TestVC.swift */,
+				255F54DD2C363A9C0004722A /* TestVC.xib */,
+			);
+			path = test_ui;
+			sourceTree = "<group>";
+		};
 		25A7E83F2C2FD99E0022C8CD = {
 			isa = PBXGroup;
 			children = (
@@ -241,6 +254,7 @@
 		25A7E87D2C2FDC3D0022C8CD /* ui */ = {
 			isa = PBXGroup;
 			children = (
+				255F54DA2C363A6D0004722A /* test_ui */,
 				25A7E8BE2C3029090022C8CD /* custom_view */,
 				25A7E8C52C312BEF0022C8CD /* UIManager.swift */,
 			);
@@ -384,6 +398,7 @@
 				25A7E8552C2FD9A00022C8CD /* Assets.xcassets in Resources */,
 				255F54D92C36368B0004722A /* CommonPushBtnVC.xib in Resources */,
 				255F54CA2C316B910004722A /* Config.xcconfig in Resources */,
+				255F54DE2C363A9C0004722A /* TestVC.xib in Resources */,
 				25A7E8582C2FD9A00022C8CD /* Base in Resources */,
 				25A7E8C22C30297A0022C8CD /* CustomNavigationVC.xib in Resources */,
 				255F54D42C324F940004722A /* SignInVC.xib in Resources */,
@@ -514,6 +529,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				255F54DC2C363A800004722A /* TestVC.swift in Sources */,
 				25A7E87C2C2FDB440022C8CD /* SignInVC.swift in Sources */,
 				255F54D02C3238F70004722A /* KakaoSignInModule.swift in Sources */,
 				255F54CC2C3237010004722A /* CommonEnum.swift in Sources */,
