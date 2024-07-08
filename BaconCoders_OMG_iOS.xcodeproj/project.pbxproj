@@ -21,6 +21,8 @@
 		255F54D92C36368B0004722A /* CommonPushBtnVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 255F54D82C36368B0004722A /* CommonPushBtnVC.xib */; };
 		255F54DC2C363A800004722A /* TestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255F54DB2C363A800004722A /* TestVC.swift */; };
 		255F54DE2C363A9C0004722A /* TestVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 255F54DD2C363A9C0004722A /* TestVC.xib */; };
+		255F54E22C37FB100004722A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 255F54E02C37FB100004722A /* Localizable.strings */; };
+		255F54E52C37FBDD0004722A /* String+Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255F54E42C37FBDD0004722A /* String+Localized.swift */; };
 		25A7E84C2C2FD99E0022C8CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A7E84B2C2FD99E0022C8CD /* AppDelegate.swift */; };
 		25A7E84E2C2FD99E0022C8CD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A7E84D2C2FD99E0022C8CD /* SceneDelegate.swift */; };
 		25A7E8552C2FD9A00022C8CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25A7E8542C2FD9A00022C8CD /* Assets.xcassets */; };
@@ -71,6 +73,9 @@
 		255F54D82C36368B0004722A /* CommonPushBtnVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommonPushBtnVC.xib; sourceTree = "<group>"; };
 		255F54DB2C363A800004722A /* TestVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestVC.swift; sourceTree = "<group>"; };
 		255F54DD2C363A9C0004722A /* TestVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestVC.xib; sourceTree = "<group>"; };
+		255F54E12C37FB100004722A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		255F54E32C37FB2A0004722A /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
+		255F54E42C37FBDD0004722A /* String+Localized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Localized.swift"; sourceTree = "<group>"; };
 		25A7E8482C2FD99E0022C8CD /* BaconCoders_OMG_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BaconCoders_OMG_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		25A7E84B2C2FD99E0022C8CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		25A7E84D2C2FD99E0022C8CD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -164,6 +169,8 @@
 			children = (
 				255F54D52C36365D0004722A /* ui */,
 				255F54C62C3143BB0004722A /* data_model */,
+				255F54E02C37FB100004722A /* Localizable.strings */,
+				255F54E42C37FBDD0004722A /* String+Localized.swift */,
 			);
 			path = common;
 			sourceTree = "<group>";
@@ -376,6 +383,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ko,
 			);
 			mainGroup = 25A7E83F2C2FD99E0022C8CD;
 			productRefGroup = 25A7E8492C2FD99E0022C8CD /* Products */;
@@ -398,6 +406,7 @@
 				25A7E8552C2FD9A00022C8CD /* Assets.xcassets in Resources */,
 				255F54D92C36368B0004722A /* CommonPushBtnVC.xib in Resources */,
 				255F54CA2C316B910004722A /* Config.xcconfig in Resources */,
+				255F54E22C37FB100004722A /* Localizable.strings in Resources */,
 				255F54DE2C363A9C0004722A /* TestVC.xib in Resources */,
 				25A7E8582C2FD9A00022C8CD /* Base in Resources */,
 				25A7E8C22C30297A0022C8CD /* CustomNavigationVC.xib in Resources */,
@@ -540,6 +549,7 @@
 				255F54D72C36366A0004722A /* CommonPushBtnVC.swift in Sources */,
 				255F54C82C3143C40004722A /* UserData.swift in Sources */,
 				255F54C42C313F5C0004722A /* HTTPClient.swift in Sources */,
+				255F54E52C37FBDD0004722A /* String+Localized.swift in Sources */,
 				255F54C02C313E1C0004722A /* NetWorkManager.swift in Sources */,
 				255F54CE2C3238ED0004722A /* GoogleSignInModule.swift in Sources */,
 				25A7E8C02C3029640022C8CD /* CustomNavigationVC.swift in Sources */,
@@ -581,6 +591,15 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		255F54E02C37FB100004722A /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				255F54E12C37FB100004722A /* en */,
+				255F54E32C37FB2A0004722A /* ko */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		25A7E8562C2FD9A00022C8CD /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -598,6 +617,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -661,6 +681,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
