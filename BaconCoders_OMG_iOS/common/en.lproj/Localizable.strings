@@ -6,4 +6,6 @@
   
 */
 
-"BTN_TITLE_KAKAO" = "en";
+"BTN_TITLE_KAKAO" = "SignIn With Kakao";
+"BTN_TITLE_GOOGLE" = "SignIn With Google";
+"BTN_TITLE_EMAIL" = "SignIn With Email";

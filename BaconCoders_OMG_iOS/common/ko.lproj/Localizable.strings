@@ -6,4 +6,6 @@
   
 */
 
-"BTN_TITLE_KAKAO" = "ko";
+"BTN_TITLE_KAKAO" = "카카오로 시작하기";
+"BTN_TITLE_GOOGLE" = "구글로 시작하기";
+"BTN_TITLE_EMAIL" = "이메일로 시작하기";
