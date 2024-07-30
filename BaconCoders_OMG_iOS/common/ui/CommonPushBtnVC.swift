@@ -9,13 +9,6 @@ import UIKit
 
 let BTN_CORNE_RRADIUS:CGFloat = 10
 
-let BTN_SMALL_WIDTH:CGFloat = 72
-let BTN_SMALL_HEIGHT:CGFloat = 31
-let BTN_MEDIUM_WIDTH:CGFloat = 305
-let BTN_MEDIUM_HEIGHT:CGFloat = 45
-let BTN_LARGE_WIDTH:CGFloat = 380
-let BTN_LARGE_HEIGHT:CGFloat = 48
-
 enum PUSH_BTN_SIZE {
     case SMALL
     case MEDIUM
@@ -32,47 +25,42 @@ protocol CommonPushBtnVCDelegate: AnyObject {
     func actionCommonBtnWithType(_ type:PUSH_BTN_TYPE)
 }
 
-class CommonPushBtnVC: UIViewController{
-    var delegate : CommonPushBtnVCDelegate? = nil
+class CommonPushBtnConfigure{
     var btnTitle : String? = nil
     var btnImage : UIImage? = nil
     var btnType : PUSH_BTN_TYPE = .NORMAL
-    var btnSize : PUSH_BTN_SIZE = .MEDIUM
+    var btnSize : CGSize = CGSizeMake(100, 100)
+}
+
+class CommonPushBtnVC: UIViewController{
+    var delegate : CommonPushBtnVCDelegate? = nil
+    var configure : CommonPushBtnConfigure? = nil
     
     @IBOutlet weak private var btn: UIButton!
     
     override func viewDidLoad() {
         print("[CommonPushBtnVC] viewDidLoad")
-        self.uiInitalize()
+        self.initWithConfigure(configure)
     }
     
-    func uiInitalize(){
-        print("[CommonPushBtnVC] uiInitalize")
+    func initWithConfigure(_ config:CommonPushBtnConfigure?){
+        if config == nil {return}
+        print("[CommonPushBtnVC] initWithConfigure")
         
         self.btn.layer.cornerRadius = BTN_CORNE_RRADIUS
         
-        if btnTitle != nil {
-            self.btn.setTitle(btnTitle!, for: .normal)
+        if config?.btnTitle != nil {
+            self.btn.setTitle(config?.btnTitle!, for: .normal)
         }
         
-        if btnImage != nil {
-            self.btn.setImage(btnImage!, for:.normal)
+        if config?.btnImage != nil {
+            self.btn.setImage(config?.btnImage!, for:.normal)
         }
         
-        switch btnSize {
-        case .SMALL:
-            self.view.frame.size = CGSizeMake(BTN_SMALL_WIDTH, BTN_SMALL_HEIGHT)
-            break
-        case .MEDIUM:
-            self.view.frame.size = CGSizeMake(BTN_MEDIUM_WIDTH, BTN_MEDIUM_HEIGHT)
-            break
-        case .LARGE:
-            self.view.frame.size = CGSizeMake(BTN_LARGE_WIDTH, BTN_LARGE_HEIGHT)
-            break
-        }
+        self.view.frame.size = config!.btnSize
         self.btn.frame.size = self.view.frame.size
         
-        switch btnType {
+        switch config?.btnType {
         case .NORMAL:
             self.btn.backgroundColor = UIColor(named: "BtnNormalColor")
             self.btn.setTitleColor(.white, for: .normal)
@@ -86,6 +74,8 @@ class CommonPushBtnVC: UIViewController{
             self.btn.backgroundColor = .white
             self.btn.setTitleColor(.black, for: .normal)
             break
+        default:
+            break
         }
         
         self.btn.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.70).cgColor
@@ -98,6 +88,6 @@ class CommonPushBtnVC: UIViewController{
     
     
     @IBAction func actionBtn(_ sender: Any) {
-        self.delegate?.actionCommonBtnWithType(btnType)
+        self.delegate?.actionCommonBtnWithType(configure!.btnType)
     }
 }

@@ -18,12 +18,22 @@ class EntranceVC: UIViewController, CommonPushBtnVCDelegate {
     
     private let navigationView : CustomNavigationVC = CustomNavigationVC()
     var delegate : EntranceVCDelegate?
-    var signUpBtn : CommonPushBtnVC?
-    var signUpKakaoBtn : CommonPushBtnVC?
-    var signUpGoogleBtn : CommonPushBtnVC?
     
+    // ui area
+    @IBOutlet weak var navigationArea: UIView!
+    @IBOutlet weak var titleArea: UIView!
+    @IBOutlet weak var contentArea: UIView!
+    @IBOutlet weak var kakaoArea: UIView!
+    @IBOutlet weak var googleArea: UIView!
+    @IBOutlet weak var emailArea: UIView!
+    @IBOutlet weak var signUpArea: UIView!
+    @IBOutlet weak var inquiryArea: UIView!
+    @IBOutlet weak var faqArea: UIView!
     
-    @IBOutlet weak var signInBtn : UIButton!
+    // signIn btns
+    private var signInBtn : CommonPushBtnVC?
+    private var signInKakaoBtn : CommonPushBtnVC?
+    private var signInGoogleBtn : CommonPushBtnVC?
     
     
     override func viewDidLoad() {
@@ -37,32 +47,47 @@ class EntranceVC: UIViewController, CommonPushBtnVCDelegate {
 //        navigationView.view.frame.origin = CGPoint(x: 0, y: navigationView.view.frame.height)
 //        self.view.addSubview(navigationView.view)
         
-        signUpBtn = CommonPushBtnVC()
-        signUpBtn?.delegate = self
-        signUpBtn?.btnTitle = "BTN_TITLE_KAKAO".localized
-        signUpBtn?.btnImage = .remove
-        signUpBtn?.btnType = .KAKAO
-        signUpBtn?.btnSize = .LARGE
-        signUpBtn?.view.frame.origin = CGPointMake(0, 150)
-        self.view.addSubview(signUpBtn!.view)
+        // item 1
+        let config1 : CommonPushBtnConfigure = CommonPushBtnConfigure()
+        config1.btnTitle = "BTN_TITLE_KAKAO".localized
+        config1.btnImage = .remove
+        config1.btnType = .KAKAO
+        config1.btnSize = kakaoArea.frame.size
         
-        signUpKakaoBtn = CommonPushBtnVC()
-        signUpKakaoBtn?.delegate = self
-        signUpKakaoBtn?.btnTitle = "Google로 시작하기"
-        signUpKakaoBtn?.btnImage = .remove
-        signUpKakaoBtn?.btnType = .GOOGLE
-        signUpKakaoBtn?.btnSize = .LARGE
-        signUpKakaoBtn?.view.frame.origin = CGPointMake(0, 300)
-        self.view.addSubview(signUpKakaoBtn!.view)
+        signInBtn = CommonPushBtnVC()
+        signInBtn?.delegate = self
+        signInBtn?.configure = config1
         
-        signUpGoogleBtn = CommonPushBtnVC()
-        signUpGoogleBtn?.delegate = self
-        signUpGoogleBtn?.btnTitle = "이메일로 시작하기"
-        signUpGoogleBtn?.btnImage = .remove
-        signUpGoogleBtn?.btnType = .NORMAL
-        signUpGoogleBtn?.btnSize = .LARGE
-        signUpGoogleBtn?.view.frame.origin = CGPointMake(0, 450)
-        self.view.addSubview(signUpGoogleBtn!.view)
+        signInBtn?.view.frame.origin = kakaoArea.frame.origin
+        self.view.addSubview(signInBtn!.view)
+        
+        // item 2
+        let config2 : CommonPushBtnConfigure = CommonPushBtnConfigure()
+        config2.btnTitle = "BTN_TITLE_GOOGLE".localized
+        config2.btnImage = .remove
+        config2.btnType = .GOOGLE
+        config2.btnSize = googleArea.frame.size
+        
+        signInKakaoBtn = CommonPushBtnVC()
+        signInKakaoBtn?.delegate = self
+        signInKakaoBtn?.configure = config2
+        
+        signInKakaoBtn?.view.frame.origin = googleArea.frame.origin
+        self.view.addSubview(signInKakaoBtn!.view)
+        
+        // item 3
+        let config3 : CommonPushBtnConfigure = CommonPushBtnConfigure()
+        config3.btnTitle = "BTN_TITLE_EMAIL".localized
+        config3.btnImage = .remove
+        config3.btnType = .NORMAL
+        config3.btnSize = emailArea.frame.size
+        
+        signInGoogleBtn = CommonPushBtnVC()
+        signInGoogleBtn?.delegate = self
+        signInGoogleBtn?.configure = config3
+        
+        signInGoogleBtn?.view.frame.origin = emailArea.frame.origin
+        self.view.addSubview(signInGoogleBtn!.view)
     }
     
     //MARK: - CommonPushBtnVCDelegate -

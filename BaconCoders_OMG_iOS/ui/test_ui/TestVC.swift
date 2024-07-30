@@ -18,11 +18,15 @@ class TestVC: UIViewController {
         var centerY : CGFloat = self.view.frame.size.height / 2
         
         //MARK: ui size
+        let config : CommonPushBtnConfigure = CommonPushBtnConfigure()
+        config.btnTitle = "로그인!"
+        config.btnImage = .remove
+        config.btnType = .KAKAO
+//        config.btnSize = .LARGE
+        
         commonBtnVC = CommonPushBtnVC()
-        commonBtnVC?.btnTitle = "로그인!"
-        commonBtnVC?.btnImage = .remove
-        commonBtnVC?.btnType = .KAKAO
-        commonBtnVC?.btnSize = .LARGE
+        commonBtnVC?.configure = config
+        
         print("[TestVC] set option()")
         
         let testViewSize : CGSize = commonBtnVC!.view.frame.size

@@ -189,6 +189,8 @@
 			children = (
 				255F54D62C36366A0004722A /* CommonPushBtnVC.swift */,
 				255F54D82C36368B0004722A /* CommonPushBtnVC.xib */,
+				25A7E8BF2C3029640022C8CD /* CustomNavigationVC.swift */,
+				25A7E8C12C30297A0022C8CD /* CustomNavigationVC.xib */,
 			);
 			path = ui;
 			sourceTree = "<group>";
@@ -276,8 +278,6 @@
 				25A7E87B2C2FDB440022C8CD /* SignInVC.swift */,
 				255F54D32C324F940004722A /* SignInVC.xib */,
 				25A7E87E2C2FDC4A0022C8CD /* SignUpVC.swift */,
-				25A7E8BF2C3029640022C8CD /* CustomNavigationVC.swift */,
-				25A7E8C12C30297A0022C8CD /* CustomNavigationVC.xib */,
 			);
 			path = custom_view;
 			sourceTree = "<group>";
