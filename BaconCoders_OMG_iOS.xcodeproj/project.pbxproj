@@ -7,303 +7,142 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0CDFD8664068EBF0B5984878 /* Pods_BaconCoders_OMG_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CD64A175D64DC12E351842F /* Pods_BaconCoders_OMG_iOS.framework */; };
-		255F54C02C313E1C0004722A /* NetWorkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255F54BF2C313E1C0004722A /* NetWorkManager.swift */; };
-		255F54C42C313F5C0004722A /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255F54C32C313F5C0004722A /* HTTPClient.swift */; };
-		255F54C82C3143C40004722A /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255F54C72C3143C40004722A /* UserData.swift */; };
-		255F54CA2C316B910004722A /* Config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 255F54C92C316B910004722A /* Config.xcconfig */; };
-		255F54CC2C3237010004722A /* CommonEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255F54CB2C3237010004722A /* CommonEnum.swift */; };
-		255F54CE2C3238ED0004722A /* GoogleSignInModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255F54CD2C3238ED0004722A /* GoogleSignInModule.swift */; };
-		255F54D02C3238F70004722A /* KakaoSignInModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255F54CF2C3238F70004722A /* KakaoSignInModule.swift */; };
-		255F54D22C324EC50004722A /* EntranceVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 255F54D12C324EC50004722A /* EntranceVC.xib */; };
-		255F54D42C324F940004722A /* SignInVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 255F54D32C324F940004722A /* SignInVC.xib */; };
-		255F54D72C36366A0004722A /* CommonPushBtnVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255F54D62C36366A0004722A /* CommonPushBtnVC.swift */; };
-		255F54D92C36368B0004722A /* CommonPushBtnVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 255F54D82C36368B0004722A /* CommonPushBtnVC.xib */; };
-		255F54DC2C363A800004722A /* TestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255F54DB2C363A800004722A /* TestVC.swift */; };
-		255F54DE2C363A9C0004722A /* TestVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 255F54DD2C363A9C0004722A /* TestVC.xib */; };
-		255F54E22C37FB100004722A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 255F54E02C37FB100004722A /* Localizable.strings */; };
-		255F54E52C37FBDD0004722A /* String+Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255F54E42C37FBDD0004722A /* String+Localized.swift */; };
-		25A7E84C2C2FD99E0022C8CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A7E84B2C2FD99E0022C8CD /* AppDelegate.swift */; };
-		25A7E84E2C2FD99E0022C8CD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A7E84D2C2FD99E0022C8CD /* SceneDelegate.swift */; };
-		25A7E8552C2FD9A00022C8CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25A7E8542C2FD9A00022C8CD /* Assets.xcassets */; };
-		25A7E8582C2FD9A00022C8CD /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 25A7E8572C2FD9A00022C8CD /* Base */; };
-		25A7E8632C2FD9A00022C8CD /* BaconCoders_OMG_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A7E8622C2FD9A00022C8CD /* BaconCoders_OMG_iOSTests.swift */; };
-		25A7E86D2C2FD9A00022C8CD /* BaconCoders_OMG_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A7E86C2C2FD9A00022C8CD /* BaconCoders_OMG_iOSUITests.swift */; };
-		25A7E86F2C2FD9A00022C8CD /* BaconCoders_OMG_iOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A7E86E2C2FD9A00022C8CD /* BaconCoders_OMG_iOSUITestsLaunchTests.swift */; };
-		25A7E87C2C2FDB440022C8CD /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A7E87B2C2FDB440022C8CD /* SignInVC.swift */; };
-		25A7E87F2C2FDC4A0022C8CD /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A7E87E2C2FDC4A0022C8CD /* SignUpVC.swift */; };
-		25A7E8BD2C3022370022C8CD /* EntranceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A7E8BC2C3022370022C8CD /* EntranceVC.swift */; };
-		25A7E8C02C3029640022C8CD /* CustomNavigationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A7E8BF2C3029640022C8CD /* CustomNavigationVC.swift */; };
-		25A7E8C22C30297A0022C8CD /* CustomNavigationVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25A7E8C12C30297A0022C8CD /* CustomNavigationVC.xib */; };
-		25A7E8C42C312BE60022C8CD /* OMGManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A7E8C32C312BE60022C8CD /* OMGManager.swift */; };
-		25A7E8C62C312BEF0022C8CD /* UIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A7E8C52C312BEF0022C8CD /* UIManager.swift */; };
-		672D7BC2A80129334768C72C /* Pods_BaconCoders_OMG_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C0CA70FE7A2704A7C5148A1 /* Pods_BaconCoders_OMG_iOSTests.framework */; };
-		A78DEE450A61C734A4B8746A /* Pods_BaconCoders_OMG_iOS_BaconCoders_OMG_iOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE833A7074A57B444C861F68 /* Pods_BaconCoders_OMG_iOS_BaconCoders_OMG_iOSUITests.framework */; };
+		FDFA0DED2C9FBCF1007B2070 /* BaconCoders_OMG_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFA0DEC2C9FBCF1007B2070 /* BaconCoders_OMG_iOSApp.swift */; };
+		FDFA0DEF2C9FBCF1007B2070 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFA0DEE2C9FBCF1007B2070 /* ContentView.swift */; };
+		FDFA0DF12C9FBCF5007B2070 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDFA0DF02C9FBCF5007B2070 /* Assets.xcassets */; };
+		FDFA0DF42C9FBCF5007B2070 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDFA0DF32C9FBCF5007B2070 /* Preview Assets.xcassets */; };
+		FDFA0DF62C9FBCF5007B2070 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFA0DF52C9FBCF5007B2070 /* Persistence.swift */; };
+		FDFA0DF92C9FBCF5007B2070 /* BaconCoders_OMG_iOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FDFA0DF72C9FBCF5007B2070 /* BaconCoders_OMG_iOS.xcdatamodeld */; };
+		FDFA0E032C9FBCF6007B2070 /* BaconCoders_OMG_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFA0E022C9FBCF6007B2070 /* BaconCoders_OMG_iOSTests.swift */; };
+		FDFA0E0D2C9FBCF6007B2070 /* BaconCoders_OMG_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFA0E0C2C9FBCF6007B2070 /* BaconCoders_OMG_iOSUITests.swift */; };
+		FDFA0E0F2C9FBCF6007B2070 /* BaconCoders_OMG_iOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFA0E0E2C9FBCF6007B2070 /* BaconCoders_OMG_iOSUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		25A7E85F2C2FD9A00022C8CD /* PBXContainerItemProxy */ = {
+		FDFA0DFF2C9FBCF6007B2070 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 25A7E8402C2FD99E0022C8CD /* Project object */;
+			containerPortal = FDFA0DE12C9FBCF1007B2070 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 25A7E8472C2FD99E0022C8CD;
+			remoteGlobalIDString = FDFA0DE82C9FBCF1007B2070;
 			remoteInfo = BaconCoders_OMG_iOS;
 		};
-		25A7E8692C2FD9A00022C8CD /* PBXContainerItemProxy */ = {
+		FDFA0E092C9FBCF6007B2070 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 25A7E8402C2FD99E0022C8CD /* Project object */;
+			containerPortal = FDFA0DE12C9FBCF1007B2070 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 25A7E8472C2FD99E0022C8CD;
+			remoteGlobalIDString = FDFA0DE82C9FBCF1007B2070;
 			remoteInfo = BaconCoders_OMG_iOS;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0CD64A175D64DC12E351842F /* Pods_BaconCoders_OMG_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BaconCoders_OMG_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		255F54BF2C313E1C0004722A /* NetWorkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetWorkManager.swift; sourceTree = "<group>"; };
-		255F54C32C313F5C0004722A /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
-		255F54C72C3143C40004722A /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
-		255F54C92C316B910004722A /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
-		255F54CB2C3237010004722A /* CommonEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonEnum.swift; sourceTree = "<group>"; };
-		255F54CD2C3238ED0004722A /* GoogleSignInModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSignInModule.swift; sourceTree = "<group>"; };
-		255F54CF2C3238F70004722A /* KakaoSignInModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoSignInModule.swift; sourceTree = "<group>"; };
-		255F54D12C324EC50004722A /* EntranceVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EntranceVC.xib; sourceTree = "<group>"; };
-		255F54D32C324F940004722A /* SignInVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignInVC.xib; sourceTree = "<group>"; };
-		255F54D62C36366A0004722A /* CommonPushBtnVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonPushBtnVC.swift; sourceTree = "<group>"; };
-		255F54D82C36368B0004722A /* CommonPushBtnVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommonPushBtnVC.xib; sourceTree = "<group>"; };
-		255F54DB2C363A800004722A /* TestVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestVC.swift; sourceTree = "<group>"; };
-		255F54DD2C363A9C0004722A /* TestVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestVC.xib; sourceTree = "<group>"; };
-		255F54E12C37FB100004722A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		255F54E32C37FB2A0004722A /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
-		255F54E42C37FBDD0004722A /* String+Localized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Localized.swift"; sourceTree = "<group>"; };
-		25A7E8482C2FD99E0022C8CD /* BaconCoders_OMG_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BaconCoders_OMG_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		25A7E84B2C2FD99E0022C8CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		25A7E84D2C2FD99E0022C8CD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		25A7E8542C2FD9A00022C8CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		25A7E8572C2FD9A00022C8CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		25A7E8592C2FD9A00022C8CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		25A7E85E2C2FD9A00022C8CD /* BaconCoders_OMG_iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BaconCoders_OMG_iOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		25A7E8622C2FD9A00022C8CD /* BaconCoders_OMG_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaconCoders_OMG_iOSTests.swift; sourceTree = "<group>"; };
-		25A7E8682C2FD9A00022C8CD /* BaconCoders_OMG_iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BaconCoders_OMG_iOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		25A7E86C2C2FD9A00022C8CD /* BaconCoders_OMG_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaconCoders_OMG_iOSUITests.swift; sourceTree = "<group>"; };
-		25A7E86E2C2FD9A00022C8CD /* BaconCoders_OMG_iOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaconCoders_OMG_iOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		25A7E87B2C2FDB440022C8CD /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
-		25A7E87E2C2FDC4A0022C8CD /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
-		25A7E8BC2C3022370022C8CD /* EntranceVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntranceVC.swift; sourceTree = "<group>"; };
-		25A7E8BF2C3029640022C8CD /* CustomNavigationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationVC.swift; sourceTree = "<group>"; };
-		25A7E8C12C30297A0022C8CD /* CustomNavigationVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomNavigationVC.xib; sourceTree = "<group>"; };
-		25A7E8C32C312BE60022C8CD /* OMGManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OMGManager.swift; sourceTree = "<group>"; };
-		25A7E8C52C312BEF0022C8CD /* UIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIManager.swift; sourceTree = "<group>"; };
-		2C0CA70FE7A2704A7C5148A1 /* Pods_BaconCoders_OMG_iOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BaconCoders_OMG_iOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2F9ABCF8535531A4E77F50B4 /* Pods-BaconCoders_OMG_iOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaconCoders_OMG_iOSTests.release.xcconfig"; path = "Target Support Files/Pods-BaconCoders_OMG_iOSTests/Pods-BaconCoders_OMG_iOSTests.release.xcconfig"; sourceTree = "<group>"; };
-		3EA50D96DD5CA688F95DD9D1 /* Pods-BaconCoders_OMG_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaconCoders_OMG_iOS.release.xcconfig"; path = "Target Support Files/Pods-BaconCoders_OMG_iOS/Pods-BaconCoders_OMG_iOS.release.xcconfig"; sourceTree = "<group>"; };
-		657F93D9FC8AA093DEDD3750 /* Pods-BaconCoders_OMG_iOS-BaconCoders_OMG_iOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaconCoders_OMG_iOS-BaconCoders_OMG_iOSUITests.release.xcconfig"; path = "Target Support Files/Pods-BaconCoders_OMG_iOS-BaconCoders_OMG_iOSUITests/Pods-BaconCoders_OMG_iOS-BaconCoders_OMG_iOSUITests.release.xcconfig"; sourceTree = "<group>"; };
-		6FC8980CF4D188302492B9CC /* Pods-BaconCoders_OMG_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaconCoders_OMG_iOS.debug.xcconfig"; path = "Target Support Files/Pods-BaconCoders_OMG_iOS/Pods-BaconCoders_OMG_iOS.debug.xcconfig"; sourceTree = "<group>"; };
-		8BDA3189DEDE5A51E1C6862B /* Pods-BaconCoders_OMG_iOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaconCoders_OMG_iOSTests.debug.xcconfig"; path = "Target Support Files/Pods-BaconCoders_OMG_iOSTests/Pods-BaconCoders_OMG_iOSTests.debug.xcconfig"; sourceTree = "<group>"; };
-		8DA867FF33D49C758F9BF874 /* Pods-BaconCoders_OMG_iOS-BaconCoders_OMG_iOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaconCoders_OMG_iOS-BaconCoders_OMG_iOSUITests.debug.xcconfig"; path = "Target Support Files/Pods-BaconCoders_OMG_iOS-BaconCoders_OMG_iOSUITests/Pods-BaconCoders_OMG_iOS-BaconCoders_OMG_iOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		EE833A7074A57B444C861F68 /* Pods_BaconCoders_OMG_iOS_BaconCoders_OMG_iOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BaconCoders_OMG_iOS_BaconCoders_OMG_iOSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDFA0DE92C9FBCF1007B2070 /* BaconCoders_OMG_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BaconCoders_OMG_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDFA0DEC2C9FBCF1007B2070 /* BaconCoders_OMG_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaconCoders_OMG_iOSApp.swift; sourceTree = "<group>"; };
+		FDFA0DEE2C9FBCF1007B2070 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FDFA0DF02C9FBCF5007B2070 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FDFA0DF32C9FBCF5007B2070 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FDFA0DF52C9FBCF5007B2070 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		FDFA0DF82C9FBCF5007B2070 /* BaconCoders_OMG_iOS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BaconCoders_OMG_iOS.xcdatamodel; sourceTree = "<group>"; };
+		FDFA0DFE2C9FBCF6007B2070 /* BaconCoders_OMG_iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BaconCoders_OMG_iOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDFA0E022C9FBCF6007B2070 /* BaconCoders_OMG_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaconCoders_OMG_iOSTests.swift; sourceTree = "<group>"; };
+		FDFA0E082C9FBCF6007B2070 /* BaconCoders_OMG_iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BaconCoders_OMG_iOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDFA0E0C2C9FBCF6007B2070 /* BaconCoders_OMG_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaconCoders_OMG_iOSUITests.swift; sourceTree = "<group>"; };
+		FDFA0E0E2C9FBCF6007B2070 /* BaconCoders_OMG_iOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaconCoders_OMG_iOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		25A7E8452C2FD99E0022C8CD /* Frameworks */ = {
+		FDFA0DE62C9FBCF1007B2070 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0CDFD8664068EBF0B5984878 /* Pods_BaconCoders_OMG_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		25A7E85B2C2FD9A00022C8CD /* Frameworks */ = {
+		FDFA0DFB2C9FBCF6007B2070 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				672D7BC2A80129334768C72C /* Pods_BaconCoders_OMG_iOSTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		25A7E8652C2FD9A00022C8CD /* Frameworks */ = {
+		FDFA0E052C9FBCF6007B2070 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A78DEE450A61C734A4B8746A /* Pods_BaconCoders_OMG_iOS_BaconCoders_OMG_iOSUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		054177FA6DCE0645A6799E39 /* Pods */ = {
+		FDFA0DE02C9FBCF1007B2070 = {
 			isa = PBXGroup;
 			children = (
-				6FC8980CF4D188302492B9CC /* Pods-BaconCoders_OMG_iOS.debug.xcconfig */,
-				3EA50D96DD5CA688F95DD9D1 /* Pods-BaconCoders_OMG_iOS.release.xcconfig */,
-				8DA867FF33D49C758F9BF874 /* Pods-BaconCoders_OMG_iOS-BaconCoders_OMG_iOSUITests.debug.xcconfig */,
-				657F93D9FC8AA093DEDD3750 /* Pods-BaconCoders_OMG_iOS-BaconCoders_OMG_iOSUITests.release.xcconfig */,
-				8BDA3189DEDE5A51E1C6862B /* Pods-BaconCoders_OMG_iOSTests.debug.xcconfig */,
-				2F9ABCF8535531A4E77F50B4 /* Pods-BaconCoders_OMG_iOSTests.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
-		255F54C12C313EFF0004722A /* network */ = {
-			isa = PBXGroup;
-			children = (
-				255F54C22C313F220004722A /* network_module */,
-				255F54BF2C313E1C0004722A /* NetWorkManager.swift */,
-			);
-			path = network;
-			sourceTree = "<group>";
-		};
-		255F54C22C313F220004722A /* network_module */ = {
-			isa = PBXGroup;
-			children = (
-				255F54CD2C3238ED0004722A /* GoogleSignInModule.swift */,
-				255F54CF2C3238F70004722A /* KakaoSignInModule.swift */,
-				255F54C32C313F5C0004722A /* HTTPClient.swift */,
-			);
-			path = network_module;
-			sourceTree = "<group>";
-		};
-		255F54C52C3143B00004722A /* common */ = {
-			isa = PBXGroup;
-			children = (
-				255F54D52C36365D0004722A /* ui */,
-				255F54C62C3143BB0004722A /* data_model */,
-				255F54E02C37FB100004722A /* Localizable.strings */,
-				255F54E42C37FBDD0004722A /* String+Localized.swift */,
-			);
-			path = common;
-			sourceTree = "<group>";
-		};
-		255F54C62C3143BB0004722A /* data_model */ = {
-			isa = PBXGroup;
-			children = (
-				255F54CB2C3237010004722A /* CommonEnum.swift */,
-				255F54C72C3143C40004722A /* UserData.swift */,
-			);
-			path = data_model;
-			sourceTree = "<group>";
-		};
-		255F54D52C36365D0004722A /* ui */ = {
-			isa = PBXGroup;
-			children = (
-				255F54D62C36366A0004722A /* CommonPushBtnVC.swift */,
-				255F54D82C36368B0004722A /* CommonPushBtnVC.xib */,
-				25A7E8BF2C3029640022C8CD /* CustomNavigationVC.swift */,
-				25A7E8C12C30297A0022C8CD /* CustomNavigationVC.xib */,
-			);
-			path = ui;
-			sourceTree = "<group>";
-		};
-		255F54DA2C363A6D0004722A /* test_ui */ = {
-			isa = PBXGroup;
-			children = (
-				255F54DB2C363A800004722A /* TestVC.swift */,
-				255F54DD2C363A9C0004722A /* TestVC.xib */,
-			);
-			path = test_ui;
-			sourceTree = "<group>";
-		};
-		25A7E83F2C2FD99E0022C8CD = {
-			isa = PBXGroup;
-			children = (
-				255F54C92C316B910004722A /* Config.xcconfig */,
-				25A7E84A2C2FD99E0022C8CD /* BaconCoders_OMG_iOS */,
-				25A7E8612C2FD9A00022C8CD /* BaconCoders_OMG_iOSTests */,
-				25A7E86B2C2FD9A00022C8CD /* BaconCoders_OMG_iOSUITests */,
-				25A7E8492C2FD99E0022C8CD /* Products */,
-				054177FA6DCE0645A6799E39 /* Pods */,
-				5CFE48E9EA672701112D3C0C /* Frameworks */,
+				FDFA0DEB2C9FBCF1007B2070 /* BaconCoders_OMG_iOS */,
+				FDFA0E012C9FBCF6007B2070 /* BaconCoders_OMG_iOSTests */,
+				FDFA0E0B2C9FBCF6007B2070 /* BaconCoders_OMG_iOSUITests */,
+				FDFA0DEA2C9FBCF1007B2070 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		25A7E8492C2FD99E0022C8CD /* Products */ = {
+		FDFA0DEA2C9FBCF1007B2070 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				25A7E8482C2FD99E0022C8CD /* BaconCoders_OMG_iOS.app */,
-				25A7E85E2C2FD9A00022C8CD /* BaconCoders_OMG_iOSTests.xctest */,
-				25A7E8682C2FD9A00022C8CD /* BaconCoders_OMG_iOSUITests.xctest */,
+				FDFA0DE92C9FBCF1007B2070 /* BaconCoders_OMG_iOS.app */,
+				FDFA0DFE2C9FBCF6007B2070 /* BaconCoders_OMG_iOSTests.xctest */,
+				FDFA0E082C9FBCF6007B2070 /* BaconCoders_OMG_iOSUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		25A7E84A2C2FD99E0022C8CD /* BaconCoders_OMG_iOS */ = {
+		FDFA0DEB2C9FBCF1007B2070 /* BaconCoders_OMG_iOS */ = {
 			isa = PBXGroup;
 			children = (
-				255F54C52C3143B00004722A /* common */,
-				25A7E84B2C2FD99E0022C8CD /* AppDelegate.swift */,
-				25A7E84D2C2FD99E0022C8CD /* SceneDelegate.swift */,
-				25A7E8C32C312BE60022C8CD /* OMGManager.swift */,
-				25A7E8542C2FD9A00022C8CD /* Assets.xcassets */,
-				25A7E8592C2FD9A00022C8CD /* Info.plist */,
-				25A7E8562C2FD9A00022C8CD /* LaunchScreen.storyboard */,
-				255F54C12C313EFF0004722A /* network */,
-				25A7E87D2C2FDC3D0022C8CD /* ui */,
+				FDFA0DEC2C9FBCF1007B2070 /* BaconCoders_OMG_iOSApp.swift */,
+				FDFA0DEE2C9FBCF1007B2070 /* ContentView.swift */,
+				FDFA0DF02C9FBCF5007B2070 /* Assets.xcassets */,
+				FDFA0DF52C9FBCF5007B2070 /* Persistence.swift */,
+				FDFA0DF72C9FBCF5007B2070 /* BaconCoders_OMG_iOS.xcdatamodeld */,
+				FDFA0DF22C9FBCF5007B2070 /* Preview Content */,
 			);
 			path = BaconCoders_OMG_iOS;
 			sourceTree = "<group>";
 		};
-		25A7E8612C2FD9A00022C8CD /* BaconCoders_OMG_iOSTests */ = {
+		FDFA0DF22C9FBCF5007B2070 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				25A7E8622C2FD9A00022C8CD /* BaconCoders_OMG_iOSTests.swift */,
+				FDFA0DF32C9FBCF5007B2070 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FDFA0E012C9FBCF6007B2070 /* BaconCoders_OMG_iOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				FDFA0E022C9FBCF6007B2070 /* BaconCoders_OMG_iOSTests.swift */,
 			);
 			path = BaconCoders_OMG_iOSTests;
 			sourceTree = "<group>";
 		};
-		25A7E86B2C2FD9A00022C8CD /* BaconCoders_OMG_iOSUITests */ = {
+		FDFA0E0B2C9FBCF6007B2070 /* BaconCoders_OMG_iOSUITests */ = {
 			isa = PBXGroup;
 			children = (
-				25A7E86C2C2FD9A00022C8CD /* BaconCoders_OMG_iOSUITests.swift */,
-				25A7E86E2C2FD9A00022C8CD /* BaconCoders_OMG_iOSUITestsLaunchTests.swift */,
+				FDFA0E0C2C9FBCF6007B2070 /* BaconCoders_OMG_iOSUITests.swift */,
+				FDFA0E0E2C9FBCF6007B2070 /* BaconCoders_OMG_iOSUITestsLaunchTests.swift */,
 			);
 			path = BaconCoders_OMG_iOSUITests;
-			sourceTree = "<group>";
-		};
-		25A7E87D2C2FDC3D0022C8CD /* ui */ = {
-			isa = PBXGroup;
-			children = (
-				255F54DA2C363A6D0004722A /* test_ui */,
-				25A7E8BE2C3029090022C8CD /* custom_view */,
-				25A7E8C52C312BEF0022C8CD /* UIManager.swift */,
-			);
-			path = ui;
-			sourceTree = "<group>";
-		};
-		25A7E8BE2C3029090022C8CD /* custom_view */ = {
-			isa = PBXGroup;
-			children = (
-				25A7E8BC2C3022370022C8CD /* EntranceVC.swift */,
-				255F54D12C324EC50004722A /* EntranceVC.xib */,
-				25A7E87B2C2FDB440022C8CD /* SignInVC.swift */,
-				255F54D32C324F940004722A /* SignInVC.xib */,
-				25A7E87E2C2FDC4A0022C8CD /* SignUpVC.swift */,
-			);
-			path = custom_view;
-			sourceTree = "<group>";
-		};
-		5CFE48E9EA672701112D3C0C /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				0CD64A175D64DC12E351842F /* Pods_BaconCoders_OMG_iOS.framework */,
-				EE833A7074A57B444C861F68 /* Pods_BaconCoders_OMG_iOS_BaconCoders_OMG_iOSUITests.framework */,
-				2C0CA70FE7A2704A7C5148A1 /* Pods_BaconCoders_OMG_iOSTests.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		25A7E8472C2FD99E0022C8CD /* BaconCoders_OMG_iOS */ = {
+		FDFA0DE82C9FBCF1007B2070 /* BaconCoders_OMG_iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 25A7E8722C2FD9A00022C8CD /* Build configuration list for PBXNativeTarget "BaconCoders_OMG_iOS" */;
+			buildConfigurationList = FDFA0E122C9FBCF6007B2070 /* Build configuration list for PBXNativeTarget "BaconCoders_OMG_iOS" */;
 			buildPhases = (
-				A0A21E5AE7793D2D616E8E3B /* [CP] Check Pods Manifest.lock */,
-				25A7E8442C2FD99E0022C8CD /* Sources */,
-				25A7E8452C2FD99E0022C8CD /* Frameworks */,
-				25A7E8462C2FD99E0022C8CD /* Resources */,
-				EDE7B4C0ED43EE43581C3A1E /* [CP] Embed Pods Frameworks */,
+				FDFA0DE52C9FBCF1007B2070 /* Sources */,
+				FDFA0DE62C9FBCF1007B2070 /* Frameworks */,
+				FDFA0DE72C9FBCF1007B2070 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -311,117 +150,106 @@
 			);
 			name = BaconCoders_OMG_iOS;
 			productName = BaconCoders_OMG_iOS;
-			productReference = 25A7E8482C2FD99E0022C8CD /* BaconCoders_OMG_iOS.app */;
+			productReference = FDFA0DE92C9FBCF1007B2070 /* BaconCoders_OMG_iOS.app */;
 			productType = "com.apple.product-type.application";
 		};
-		25A7E85D2C2FD9A00022C8CD /* BaconCoders_OMG_iOSTests */ = {
+		FDFA0DFD2C9FBCF6007B2070 /* BaconCoders_OMG_iOSTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 25A7E8752C2FD9A00022C8CD /* Build configuration list for PBXNativeTarget "BaconCoders_OMG_iOSTests" */;
+			buildConfigurationList = FDFA0E152C9FBCF6007B2070 /* Build configuration list for PBXNativeTarget "BaconCoders_OMG_iOSTests" */;
 			buildPhases = (
-				4A3A3067E95051AB55CE8F55 /* [CP] Check Pods Manifest.lock */,
-				25A7E85A2C2FD9A00022C8CD /* Sources */,
-				25A7E85B2C2FD9A00022C8CD /* Frameworks */,
-				25A7E85C2C2FD9A00022C8CD /* Resources */,
+				FDFA0DFA2C9FBCF6007B2070 /* Sources */,
+				FDFA0DFB2C9FBCF6007B2070 /* Frameworks */,
+				FDFA0DFC2C9FBCF6007B2070 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				25A7E8602C2FD9A00022C8CD /* PBXTargetDependency */,
+				FDFA0E002C9FBCF6007B2070 /* PBXTargetDependency */,
 			);
 			name = BaconCoders_OMG_iOSTests;
 			productName = BaconCoders_OMG_iOSTests;
-			productReference = 25A7E85E2C2FD9A00022C8CD /* BaconCoders_OMG_iOSTests.xctest */;
+			productReference = FDFA0DFE2C9FBCF6007B2070 /* BaconCoders_OMG_iOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		25A7E8672C2FD9A00022C8CD /* BaconCoders_OMG_iOSUITests */ = {
+		FDFA0E072C9FBCF6007B2070 /* BaconCoders_OMG_iOSUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 25A7E8782C2FD9A00022C8CD /* Build configuration list for PBXNativeTarget "BaconCoders_OMG_iOSUITests" */;
+			buildConfigurationList = FDFA0E182C9FBCF6007B2070 /* Build configuration list for PBXNativeTarget "BaconCoders_OMG_iOSUITests" */;
 			buildPhases = (
-				7DAF9FE3CDD2BB6C11FAEA3B /* [CP] Check Pods Manifest.lock */,
-				25A7E8642C2FD9A00022C8CD /* Sources */,
-				25A7E8652C2FD9A00022C8CD /* Frameworks */,
-				25A7E8662C2FD9A00022C8CD /* Resources */,
-				3F10AE95B40E79FE5ADDACF7 /* [CP] Embed Pods Frameworks */,
+				FDFA0E042C9FBCF6007B2070 /* Sources */,
+				FDFA0E052C9FBCF6007B2070 /* Frameworks */,
+				FDFA0E062C9FBCF6007B2070 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				25A7E86A2C2FD9A00022C8CD /* PBXTargetDependency */,
+				FDFA0E0A2C9FBCF6007B2070 /* PBXTargetDependency */,
 			);
 			name = BaconCoders_OMG_iOSUITests;
 			productName = BaconCoders_OMG_iOSUITests;
-			productReference = 25A7E8682C2FD9A00022C8CD /* BaconCoders_OMG_iOSUITests.xctest */;
+			productReference = FDFA0E082C9FBCF6007B2070 /* BaconCoders_OMG_iOSUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		25A7E8402C2FD99E0022C8CD /* Project object */ = {
+		FDFA0DE12C9FBCF1007B2070 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1530;
-				LastUpgradeCheck = 1530;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
 				TargetAttributes = {
-					25A7E8472C2FD99E0022C8CD = {
-						CreatedOnToolsVersion = 15.3;
+					FDFA0DE82C9FBCF1007B2070 = {
+						CreatedOnToolsVersion = 14.3.1;
 					};
-					25A7E85D2C2FD9A00022C8CD = {
-						CreatedOnToolsVersion = 15.3;
-						TestTargetID = 25A7E8472C2FD99E0022C8CD;
+					FDFA0DFD2C9FBCF6007B2070 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = FDFA0DE82C9FBCF1007B2070;
 					};
-					25A7E8672C2FD9A00022C8CD = {
-						CreatedOnToolsVersion = 15.3;
-						TestTargetID = 25A7E8472C2FD99E0022C8CD;
+					FDFA0E072C9FBCF6007B2070 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = FDFA0DE82C9FBCF1007B2070;
 					};
 				};
 			};
-			buildConfigurationList = 25A7E8432C2FD99E0022C8CD /* Build configuration list for PBXProject "BaconCoders_OMG_iOS" */;
+			buildConfigurationList = FDFA0DE42C9FBCF1007B2070 /* Build configuration list for PBXProject "BaconCoders_OMG_iOS" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
-				ko,
 			);
-			mainGroup = 25A7E83F2C2FD99E0022C8CD;
-			productRefGroup = 25A7E8492C2FD99E0022C8CD /* Products */;
+			mainGroup = FDFA0DE02C9FBCF1007B2070;
+			productRefGroup = FDFA0DEA2C9FBCF1007B2070 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				25A7E8472C2FD99E0022C8CD /* BaconCoders_OMG_iOS */,
-				25A7E85D2C2FD9A00022C8CD /* BaconCoders_OMG_iOSTests */,
-				25A7E8672C2FD9A00022C8CD /* BaconCoders_OMG_iOSUITests */,
+				FDFA0DE82C9FBCF1007B2070 /* BaconCoders_OMG_iOS */,
+				FDFA0DFD2C9FBCF6007B2070 /* BaconCoders_OMG_iOSTests */,
+				FDFA0E072C9FBCF6007B2070 /* BaconCoders_OMG_iOSUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		25A7E8462C2FD99E0022C8CD /* Resources */ = {
+		FDFA0DE72C9FBCF1007B2070 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				255F54D22C324EC50004722A /* EntranceVC.xib in Resources */,
-				25A7E8552C2FD9A00022C8CD /* Assets.xcassets in Resources */,
-				255F54D92C36368B0004722A /* CommonPushBtnVC.xib in Resources */,
-				255F54CA2C316B910004722A /* Config.xcconfig in Resources */,
-				255F54E22C37FB100004722A /* Localizable.strings in Resources */,
-				255F54DE2C363A9C0004722A /* TestVC.xib in Resources */,
-				25A7E8582C2FD9A00022C8CD /* Base in Resources */,
-				25A7E8C22C30297A0022C8CD /* CustomNavigationVC.xib in Resources */,
-				255F54D42C324F940004722A /* SignInVC.xib in Resources */,
+				FDFA0DF42C9FBCF5007B2070 /* Preview Assets.xcassets in Resources */,
+				FDFA0DF12C9FBCF5007B2070 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		25A7E85C2C2FD9A00022C8CD /* Resources */ = {
+		FDFA0DFC2C9FBCF6007B2070 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		25A7E8662C2FD9A00022C8CD /* Resources */ = {
+		FDFA0E062C9FBCF6007B2070 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -430,194 +258,55 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		3F10AE95B40E79FE5ADDACF7 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-BaconCoders_OMG_iOS-BaconCoders_OMG_iOSUITests/Pods-BaconCoders_OMG_iOS-BaconCoders_OMG_iOSUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-BaconCoders_OMG_iOS-BaconCoders_OMG_iOSUITests/Pods-BaconCoders_OMG_iOS-BaconCoders_OMG_iOSUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BaconCoders_OMG_iOS-BaconCoders_OMG_iOSUITests/Pods-BaconCoders_OMG_iOS-BaconCoders_OMG_iOSUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		4A3A3067E95051AB55CE8F55 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-BaconCoders_OMG_iOSTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		7DAF9FE3CDD2BB6C11FAEA3B /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-BaconCoders_OMG_iOS-BaconCoders_OMG_iOSUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A0A21E5AE7793D2D616E8E3B /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-BaconCoders_OMG_iOS-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		EDE7B4C0ED43EE43581C3A1E /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-BaconCoders_OMG_iOS/Pods-BaconCoders_OMG_iOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-BaconCoders_OMG_iOS/Pods-BaconCoders_OMG_iOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BaconCoders_OMG_iOS/Pods-BaconCoders_OMG_iOS-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
-		25A7E8442C2FD99E0022C8CD /* Sources */ = {
+		FDFA0DE52C9FBCF1007B2070 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				255F54DC2C363A800004722A /* TestVC.swift in Sources */,
-				25A7E87C2C2FDB440022C8CD /* SignInVC.swift in Sources */,
-				255F54D02C3238F70004722A /* KakaoSignInModule.swift in Sources */,
-				255F54CC2C3237010004722A /* CommonEnum.swift in Sources */,
-				25A7E8C42C312BE60022C8CD /* OMGManager.swift in Sources */,
-				25A7E84C2C2FD99E0022C8CD /* AppDelegate.swift in Sources */,
-				25A7E8C62C312BEF0022C8CD /* UIManager.swift in Sources */,
-				25A7E87F2C2FDC4A0022C8CD /* SignUpVC.swift in Sources */,
-				255F54D72C36366A0004722A /* CommonPushBtnVC.swift in Sources */,
-				255F54C82C3143C40004722A /* UserData.swift in Sources */,
-				255F54C42C313F5C0004722A /* HTTPClient.swift in Sources */,
-				255F54E52C37FBDD0004722A /* String+Localized.swift in Sources */,
-				255F54C02C313E1C0004722A /* NetWorkManager.swift in Sources */,
-				255F54CE2C3238ED0004722A /* GoogleSignInModule.swift in Sources */,
-				25A7E8C02C3029640022C8CD /* CustomNavigationVC.swift in Sources */,
-				25A7E84E2C2FD99E0022C8CD /* SceneDelegate.swift in Sources */,
-				25A7E8BD2C3022370022C8CD /* EntranceVC.swift in Sources */,
+				FDFA0DF62C9FBCF5007B2070 /* Persistence.swift in Sources */,
+				FDFA0DEF2C9FBCF1007B2070 /* ContentView.swift in Sources */,
+				FDFA0DF92C9FBCF5007B2070 /* BaconCoders_OMG_iOS.xcdatamodeld in Sources */,
+				FDFA0DED2C9FBCF1007B2070 /* BaconCoders_OMG_iOSApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		25A7E85A2C2FD9A00022C8CD /* Sources */ = {
+		FDFA0DFA2C9FBCF6007B2070 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				25A7E8632C2FD9A00022C8CD /* BaconCoders_OMG_iOSTests.swift in Sources */,
+				FDFA0E032C9FBCF6007B2070 /* BaconCoders_OMG_iOSTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		25A7E8642C2FD9A00022C8CD /* Sources */ = {
+		FDFA0E042C9FBCF6007B2070 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				25A7E86F2C2FD9A00022C8CD /* BaconCoders_OMG_iOSUITestsLaunchTests.swift in Sources */,
-				25A7E86D2C2FD9A00022C8CD /* BaconCoders_OMG_iOSUITests.swift in Sources */,
+				FDFA0E0F2C9FBCF6007B2070 /* BaconCoders_OMG_iOSUITestsLaunchTests.swift in Sources */,
+				FDFA0E0D2C9FBCF6007B2070 /* BaconCoders_OMG_iOSUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		25A7E8602C2FD9A00022C8CD /* PBXTargetDependency */ = {
+		FDFA0E002C9FBCF6007B2070 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 25A7E8472C2FD99E0022C8CD /* BaconCoders_OMG_iOS */;
-			targetProxy = 25A7E85F2C2FD9A00022C8CD /* PBXContainerItemProxy */;
+			target = FDFA0DE82C9FBCF1007B2070 /* BaconCoders_OMG_iOS */;
+			targetProxy = FDFA0DFF2C9FBCF6007B2070 /* PBXContainerItemProxy */;
 		};
-		25A7E86A2C2FD9A00022C8CD /* PBXTargetDependency */ = {
+		FDFA0E0A2C9FBCF6007B2070 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 25A7E8472C2FD99E0022C8CD /* BaconCoders_OMG_iOS */;
-			targetProxy = 25A7E8692C2FD9A00022C8CD /* PBXContainerItemProxy */;
+			target = FDFA0DE82C9FBCF1007B2070 /* BaconCoders_OMG_iOS */;
+			targetProxy = FDFA0E092C9FBCF6007B2070 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
-/* Begin PBXVariantGroup section */
-		255F54E02C37FB100004722A /* Localizable.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				255F54E12C37FB100004722A /* en */,
-				255F54E32C37FB2A0004722A /* ko */,
-			);
-			name = Localizable.strings;
-			sourceTree = "<group>";
-		};
-		25A7E8562C2FD9A00022C8CD /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				25A7E8572C2FD9A00022C8CD /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
 /* Begin XCBuildConfiguration section */
-		25A7E8702C2FD9A00022C8CD /* Debug */ = {
+		FDFA0E102C9FBCF6007B2070 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 255F54C92C316B910004722A /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
-				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -650,8 +339,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -665,23 +353,20 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
-				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
-		25A7E8712C2FD9A00022C8CD /* Release */ = {
+		FDFA0E112C9FBCF6007B2070 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
-				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -714,8 +399,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -723,40 +407,38 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
-				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		25A7E8732C2FD9A00022C8CD /* Debug */ = {
+		FDFA0E132C9FBCF6007B2070 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6FC8980CF4D188302492B9CC /* Pods-BaconCoders_OMG_iOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BaconCoders_OMG_iOS/Preview Content\"";
 				DEVELOPMENT_TEAM = DW83XL6B4B;
-				ENABLE_APP_SANDBOX = NO;
-				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = BaconCoders_OMG_iOS/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.baconcoders.omg;
+				PRODUCT_BUNDLE_IDENTIFIER = "bhpark.BaconCoders-OMG-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -764,30 +446,28 @@
 			};
 			name = Debug;
 		};
-		25A7E8742C2FD9A00022C8CD /* Release */ = {
+		FDFA0E142C9FBCF6007B2070 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3EA50D96DD5CA688F95DD9D1 /* Pods-BaconCoders_OMG_iOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BaconCoders_OMG_iOS/Preview Content\"";
 				DEVELOPMENT_TEAM = DW83XL6B4B;
-				ENABLE_APP_SANDBOX = NO;
-				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = BaconCoders_OMG_iOS/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.baconcoders.omg;
+				PRODUCT_BUNDLE_IDENTIFIER = "bhpark.BaconCoders-OMG-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -795,9 +475,8 @@
 			};
 			name = Release;
 		};
-		25A7E8762C2FD9A00022C8CD /* Debug */ = {
+		FDFA0E162C9FBCF6007B2070 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8BDA3189DEDE5A51E1C6862B /* Pods-BaconCoders_OMG_iOSTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -805,7 +484,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = DW83XL6B4B;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "bhpark.BaconCoders-OMG-iOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -816,9 +495,8 @@
 			};
 			name = Debug;
 		};
-		25A7E8772C2FD9A00022C8CD /* Release */ = {
+		FDFA0E172C9FBCF6007B2070 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2F9ABCF8535531A4E77F50B4 /* Pods-BaconCoders_OMG_iOSTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -826,7 +504,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = DW83XL6B4B;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "bhpark.BaconCoders-OMG-iOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -837,9 +515,8 @@
 			};
 			name = Release;
 		};
-		25A7E8792C2FD9A00022C8CD /* Debug */ = {
+		FDFA0E192C9FBCF6007B2070 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8DA867FF33D49C758F9BF874 /* Pods-BaconCoders_OMG_iOS-BaconCoders_OMG_iOSUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -856,9 +533,8 @@
 			};
 			name = Debug;
 		};
-		25A7E87A2C2FD9A00022C8CD /* Release */ = {
+		FDFA0E1A2C9FBCF6007B2070 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 657F93D9FC8AA093DEDD3750 /* Pods-BaconCoders_OMG_iOS-BaconCoders_OMG_iOSUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -878,43 +554,56 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		25A7E8432C2FD99E0022C8CD /* Build configuration list for PBXProject "BaconCoders_OMG_iOS" */ = {
+		FDFA0DE42C9FBCF1007B2070 /* Build configuration list for PBXProject "BaconCoders_OMG_iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				25A7E8702C2FD9A00022C8CD /* Debug */,
-				25A7E8712C2FD9A00022C8CD /* Release */,
+				FDFA0E102C9FBCF6007B2070 /* Debug */,
+				FDFA0E112C9FBCF6007B2070 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		25A7E8722C2FD9A00022C8CD /* Build configuration list for PBXNativeTarget "BaconCoders_OMG_iOS" */ = {
+		FDFA0E122C9FBCF6007B2070 /* Build configuration list for PBXNativeTarget "BaconCoders_OMG_iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				25A7E8732C2FD9A00022C8CD /* Debug */,
-				25A7E8742C2FD9A00022C8CD /* Release */,
+				FDFA0E132C9FBCF6007B2070 /* Debug */,
+				FDFA0E142C9FBCF6007B2070 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		25A7E8752C2FD9A00022C8CD /* Build configuration list for PBXNativeTarget "BaconCoders_OMG_iOSTests" */ = {
+		FDFA0E152C9FBCF6007B2070 /* Build configuration list for PBXNativeTarget "BaconCoders_OMG_iOSTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				25A7E8762C2FD9A00022C8CD /* Debug */,
-				25A7E8772C2FD9A00022C8CD /* Release */,
+				FDFA0E162C9FBCF6007B2070 /* Debug */,
+				FDFA0E172C9FBCF6007B2070 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		25A7E8782C2FD9A00022C8CD /* Build configuration list for PBXNativeTarget "BaconCoders_OMG_iOSUITests" */ = {
+		FDFA0E182C9FBCF6007B2070 /* Build configuration list for PBXNativeTarget "BaconCoders_OMG_iOSUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				25A7E8792C2FD9A00022C8CD /* Debug */,
-				25A7E87A2C2FD9A00022C8CD /* Release */,
+				FDFA0E192C9FBCF6007B2070 /* Debug */,
+				FDFA0E1A2C9FBCF6007B2070 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FDFA0DF72C9FBCF5007B2070 /* BaconCoders_OMG_iOS.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FDFA0DF82C9FBCF5007B2070 /* BaconCoders_OMG_iOS.xcdatamodel */,
+			);
+			currentVersion = FDFA0DF82C9FBCF5007B2070 /* BaconCoders_OMG_iOS.xcdatamodel */;
+			path = BaconCoders_OMG_iOS.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
-	rootObject = 25A7E8402C2FD99E0022C8CD /* Project object */;
+	rootObject = FDFA0DE12C9FBCF1007B2070 /* Project object */;
 }

@@ -1,6 +1,0 @@
-framework module Pods_BaconCoders_OMG_iOS_BaconCoders_OMG_iOSUITests {
-  umbrella header "Pods-BaconCoders_OMG_iOS-BaconCoders_OMG_iOSUITests-umbrella.h"
-
-  export *
-  module * { export * }
-}
