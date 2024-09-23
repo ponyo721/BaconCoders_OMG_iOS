@@ -25,7 +25,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         #if DEBUG
         window.rootViewController = TestVC()
         #else
-        window.rootViewController = EntranceVC()
+        window.rootViewController = NavigationVC(rootViewController: EntranceVC())
         #endif
         
         self.window = window

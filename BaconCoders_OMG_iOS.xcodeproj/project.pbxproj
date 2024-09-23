@@ -11,7 +11,6 @@
 		255F54C02C313E1C0004722A /* NetWorkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255F54BF2C313E1C0004722A /* NetWorkManager.swift */; };
 		255F54C42C313F5C0004722A /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255F54C32C313F5C0004722A /* HTTPClient.swift */; };
 		255F54C82C3143C40004722A /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255F54C72C3143C40004722A /* UserData.swift */; };
-		255F54CA2C316B910004722A /* Config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 255F54C92C316B910004722A /* Config.xcconfig */; };
 		255F54CC2C3237010004722A /* CommonEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255F54CB2C3237010004722A /* CommonEnum.swift */; };
 		255F54CE2C3238ED0004722A /* GoogleSignInModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255F54CD2C3238ED0004722A /* GoogleSignInModule.swift */; };
 		255F54D02C3238F70004722A /* KakaoSignInModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255F54CF2C3238F70004722A /* KakaoSignInModule.swift */; };
@@ -39,6 +38,7 @@
 		25A7E8C62C312BEF0022C8CD /* UIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A7E8C52C312BEF0022C8CD /* UIManager.swift */; };
 		672D7BC2A80129334768C72C /* Pods_BaconCoders_OMG_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C0CA70FE7A2704A7C5148A1 /* Pods_BaconCoders_OMG_iOSTests.framework */; };
 		A78DEE450A61C734A4B8746A /* Pods_BaconCoders_OMG_iOS_BaconCoders_OMG_iOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE833A7074A57B444C861F68 /* Pods_BaconCoders_OMG_iOS_BaconCoders_OMG_iOSUITests.framework */; };
+		FDBBDFCC2CA0723B00FE9C38 /* NavigationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBBDFCB2CA0723B00FE9C38 /* NavigationVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,7 +63,6 @@
 		255F54BF2C313E1C0004722A /* NetWorkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetWorkManager.swift; sourceTree = "<group>"; };
 		255F54C32C313F5C0004722A /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 		255F54C72C3143C40004722A /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
-		255F54C92C316B910004722A /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		255F54CB2C3237010004722A /* CommonEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonEnum.swift; sourceTree = "<group>"; };
 		255F54CD2C3238ED0004722A /* GoogleSignInModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSignInModule.swift; sourceTree = "<group>"; };
 		255F54CF2C3238F70004722A /* KakaoSignInModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoSignInModule.swift; sourceTree = "<group>"; };
@@ -102,6 +101,7 @@
 		8BDA3189DEDE5A51E1C6862B /* Pods-BaconCoders_OMG_iOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaconCoders_OMG_iOSTests.debug.xcconfig"; path = "Target Support Files/Pods-BaconCoders_OMG_iOSTests/Pods-BaconCoders_OMG_iOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		8DA867FF33D49C758F9BF874 /* Pods-BaconCoders_OMG_iOS-BaconCoders_OMG_iOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaconCoders_OMG_iOS-BaconCoders_OMG_iOSUITests.debug.xcconfig"; path = "Target Support Files/Pods-BaconCoders_OMG_iOS-BaconCoders_OMG_iOSUITests/Pods-BaconCoders_OMG_iOS-BaconCoders_OMG_iOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		EE833A7074A57B444C861F68 /* Pods_BaconCoders_OMG_iOS_BaconCoders_OMG_iOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BaconCoders_OMG_iOS_BaconCoders_OMG_iOSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDBBDFCB2CA0723B00FE9C38 /* NavigationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -207,7 +207,6 @@
 		25A7E83F2C2FD99E0022C8CD = {
 			isa = PBXGroup;
 			children = (
-				255F54C92C316B910004722A /* Config.xcconfig */,
 				25A7E84A2C2FD99E0022C8CD /* BaconCoders_OMG_iOS */,
 				25A7E8612C2FD9A00022C8CD /* BaconCoders_OMG_iOSTests */,
 				25A7E86B2C2FD9A00022C8CD /* BaconCoders_OMG_iOSUITests */,
@@ -278,6 +277,7 @@
 				25A7E87B2C2FDB440022C8CD /* SignInVC.swift */,
 				255F54D32C324F940004722A /* SignInVC.xib */,
 				25A7E87E2C2FDC4A0022C8CD /* SignUpVC.swift */,
+				FDBBDFCB2CA0723B00FE9C38 /* NavigationVC.swift */,
 			);
 			path = custom_view;
 			sourceTree = "<group>";
@@ -405,7 +405,6 @@
 				255F54D22C324EC50004722A /* EntranceVC.xib in Resources */,
 				25A7E8552C2FD9A00022C8CD /* Assets.xcassets in Resources */,
 				255F54D92C36368B0004722A /* CommonPushBtnVC.xib in Resources */,
-				255F54CA2C316B910004722A /* Config.xcconfig in Resources */,
 				255F54E22C37FB100004722A /* Localizable.strings in Resources */,
 				255F54DE2C363A9C0004722A /* TestVC.xib in Resources */,
 				25A7E8582C2FD9A00022C8CD /* Base in Resources */,
@@ -550,6 +549,7 @@
 				255F54C82C3143C40004722A /* UserData.swift in Sources */,
 				255F54C42C313F5C0004722A /* HTTPClient.swift in Sources */,
 				255F54E52C37FBDD0004722A /* String+Localized.swift in Sources */,
+				FDBBDFCC2CA0723B00FE9C38 /* NavigationVC.swift in Sources */,
 				255F54C02C313E1C0004722A /* NetWorkManager.swift in Sources */,
 				255F54CE2C3238ED0004722A /* GoogleSignInModule.swift in Sources */,
 				25A7E8C02C3029640022C8CD /* CustomNavigationVC.swift in Sources */,
@@ -613,7 +613,6 @@
 /* Begin XCBuildConfiguration section */
 		25A7E8702C2FD9A00022C8CD /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 255F54C92C316B910004722A /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;

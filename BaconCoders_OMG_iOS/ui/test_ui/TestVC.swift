@@ -67,4 +67,9 @@ class TestVC: UIViewController {
 //        
 //        
 //    }
+    
+    
+    @IBAction func actionBtn(_ sender: Any) {
+        self.presentingViewController?.dismiss(animated: true)
+    }
 }

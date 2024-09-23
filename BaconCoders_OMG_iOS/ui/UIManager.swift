@@ -18,6 +18,8 @@ class UIManager : EntranceVCDelegate, SignInVCDelegate{
     var entranceVC : EntranceVC?
     let signInVC : SignInVC = SignInVC()
     
+    var currentVC : UIViewController?
+    
     func initalize(){
         print("[UIManager] initalize")
         
@@ -25,10 +27,12 @@ class UIManager : EntranceVCDelegate, SignInVCDelegate{
             print("[UIManager] window first nil")
         }
         
-        let viewController = UIApplication.shared.windows.first?.rootViewController as? EntranceVC
-//        let viewController = UIViewController() as? EntranceVC
-        entranceVC = viewController
-        entranceVC?.delegate = self
+        let viewController = UIApplication.shared.windows.first?.rootViewController as? NavigationVC
+
+        entranceVC = viewController?.viewControllers.first as? EntranceVC
+        entranceVC?.enterVCDelegate = self
+        
+        currentVC = entranceVC
     }
     
     //MARK: - private -
@@ -65,6 +69,8 @@ class UIManager : EntranceVCDelegate, SignInVCDelegate{
     
     func showSignUpVC() {
         print("[UIManager] showSignUpVC")
+        
+        self.currentVC?.show(TestVC(), sender: nil)
     }
     
     //MARK: - EntranceVCDelegate -

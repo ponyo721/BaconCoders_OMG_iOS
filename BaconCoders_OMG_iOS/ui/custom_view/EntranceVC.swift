@@ -14,13 +14,11 @@ protocol EntranceVCDelegate: AnyObject {
 }
 
 class EntranceVC: UIViewController, CommonPushBtnVCDelegate {
-
     
     private let navigationView : CustomNavigationVC = CustomNavigationVC()
-    var delegate : EntranceVCDelegate?
+    var enterVCDelegate : EntranceVCDelegate?
     
     // ui area
-    @IBOutlet weak var navigationArea: UIView!
     @IBOutlet weak var titleArea: UIView!
     @IBOutlet weak var contentArea: UIView!
     @IBOutlet weak var kakaoArea: UIView!
@@ -39,6 +37,11 @@ class EntranceVC: UIViewController, CommonPushBtnVCDelegate {
     override func viewDidLoad() {
         print("[EntranceVC] viewDidLoad")
         super.viewDidLoad()
+        
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        print("[EntranceVC] viewDidAppear")
         self.uiInitalize()
     }
     
@@ -95,13 +98,13 @@ class EntranceVC: UIViewController, CommonPushBtnVCDelegate {
         print("[EntranceVC] actionCommonBtnWithType : \(type)")
         switch type{
         case .NORMAL:
-            self.delegate?.actiongoSignUpButtonTapped()
+            self.enterVCDelegate?.actiongoSignUpButtonTapped()
             break
         case .KAKAO:
-            self.delegate?.actiongoSignInButtonTappedWithType(.KAKAO)
+            self.enterVCDelegate?.actiongoSignInButtonTappedWithType(.KAKAO)
             break
         case .GOOGLE:
-            self.delegate?.actiongoSignInButtonTappedWithType(.GOOGLE)
+            self.enterVCDelegate?.actiongoSignInButtonTappedWithType(.GOOGLE)
             break
         }
     }
@@ -109,7 +112,7 @@ class EntranceVC: UIViewController, CommonPushBtnVCDelegate {
     //MARK: - ui action -
     @IBAction func signInButtonTapped(_ sender: UIButton) {
         print("[EntranceVC] signInButtonTapped")
-        self.delegate?.actiongoSignInButtonTappedWithType(.NORMAL)
+        self.enterVCDelegate?.actiongoSignInButtonTappedWithType(.NORMAL)
     }
     
     //MARK: - private method -
