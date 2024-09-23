@@ -18,15 +18,19 @@ class EntranceVC: UIViewController, CommonPushBtnVCDelegate {
     private let navigationView : CustomNavigationVC = CustomNavigationVC()
     var enterVCDelegate : EntranceVCDelegate?
     
-    // ui area
-    @IBOutlet weak var titleArea: UIView!
-    @IBOutlet weak var contentArea: UIView!
+    //MARK: - ui area -
+    @IBOutlet weak var viewTitle: UILabel!
+    
+    @IBOutlet weak var mainContent: UIView!
+    @IBOutlet weak var subContent: UIView!
+    
     @IBOutlet weak var kakaoArea: UIView!
     @IBOutlet weak var googleArea: UIView!
     @IBOutlet weak var emailArea: UIView!
-    @IBOutlet weak var signUpArea: UIView!
-    @IBOutlet weak var inquiryArea: UIView!
-    @IBOutlet weak var faqArea: UIView!
+    
+    @IBOutlet weak var emailsignUpBtn: UIButton!
+    @IBOutlet weak var inquiryBtn: UIButton!
+    @IBOutlet weak var faqBtn: UIButton!
     
     // signIn btns
     private var signInBtn : CommonPushBtnVC?
@@ -98,7 +102,7 @@ class EntranceVC: UIViewController, CommonPushBtnVCDelegate {
         print("[EntranceVC] actionCommonBtnWithType : \(type)")
         switch type{
         case .NORMAL:
-            self.enterVCDelegate?.actiongoSignUpButtonTapped()
+            self.enterVCDelegate?.actiongoSignInButtonTappedWithType(.NORMAL)
             break
         case .KAKAO:
             self.enterVCDelegate?.actiongoSignInButtonTappedWithType(.KAKAO)
@@ -110,9 +114,10 @@ class EntranceVC: UIViewController, CommonPushBtnVCDelegate {
     }
     
     //MARK: - ui action -
-    @IBAction func signInButtonTapped(_ sender: UIButton) {
-        print("[EntranceVC] signInButtonTapped")
-        self.enterVCDelegate?.actiongoSignInButtonTappedWithType(.NORMAL)
+    @IBAction func actionEmailSignInBtn(_ sender: UIButton) {
+        print("[EntranceVC] actionEmailSignInBtn")
+        
+        self.enterVCDelegate?.actiongoSignUpButtonTapped()
     }
     
     //MARK: - private method -

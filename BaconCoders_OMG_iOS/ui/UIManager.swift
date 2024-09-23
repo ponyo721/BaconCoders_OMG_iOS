@@ -12,11 +12,11 @@ protocol UIManagerDelegate: AnyObject {
     func trySignInWithType(_ type:SIGN_IN_TYPE)
 }
 
-class UIManager : EntranceVCDelegate, SignInVCDelegate{
+class UIManager : EntranceVCDelegate, SignUpVCDelegate, SignUpCompleteVCDelegate, EmailSignInVCDelegate{
     var delegate : UIManagerDelegate?
     
     var entranceVC : EntranceVC?
-    let signInVC : SignInVC = SignInVC()
+    let signInVC : EmailSignInVC = EmailSignInVC()
     
     var currentVC : UIViewController?
     
@@ -40,44 +40,48 @@ class UIManager : EntranceVCDelegate, SignInVCDelegate{
     func showEntranceVC() {
         print("[UIManager] showEntranceVC")
         
-//        if let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene {
-//            print("[UIManager] showEntranceVC 1")
-//            if let window = windowScene.windows.first {
-//                print("[UIManager] showEntranceVC 1")
-////                entranceVC.modalTransitionStyle = .coverVertical
-////                // 전환된 화면이 보여지는 방법 설정 (fullScreen)
-////                entranceVC.modalPresentationStyle = .fullScreen
-//////                window.rootViewController?.present(entranceVC, animated: true, completion: nil)
-////                window.rootViewController = entranceVC
-////                window.makeKeyAndVisible()
-//            }
-//        }
+        self.currentVC?.show(entranceVC!, sender: nil)
+        currentVC = entranceVC
     }
     
-    func showSignInVC() {
-        print("[UIManager] showSignInVC")
+    func showEmailSignInVC() {
+        print("[UIManager] showEmailSignInVC")
         
-        signInVC.delegate = self
-        signInVC.navigationView = CustomNavigationVC()
-        signInVC.navigationView?.isShowGoBack = true
+        let emailSignInVC = EmailSignInVC()
+        emailSignInVC.emailSignInVCDelegate = self
+        emailSignInVC.navigationItem.setHidesBackButton(true, animated: false)
         
-        signInVC.modalTransitionStyle = .coverVertical
-        // 전환된 화면이 보여지는 방법 설정 (fullScreen)
-        signInVC.modalPresentationStyle = .fullScreen
-        entranceVC?.present(signInVC, animated: true, completion: nil)
+        self.currentVC?.show(emailSignInVC, sender: nil)
+        currentVC = emailSignInVC
     }
     
     func showSignUpVC() {
         print("[UIManager] showSignUpVC")
         
-        self.currentVC?.show(TestVC(), sender: nil)
+        let signUpVC = SignUpVC()
+        signUpVC.signUpVCDelegate = self
+        signUpVC.navigationItem.setHidesBackButton(true, animated: false)
+        
+        self.currentVC?.show(signUpVC, sender: nil)
+        currentVC = signUpVC
+    }
+    
+    func showSignUpCompleteVC() {
+        print("[UIManager] showSignUpCompleteVC")
+        
+        let signUpCompleteVC = SignUpCompleteVC()
+        signUpCompleteVC.signUpCompleteVCDelegate = self
+        signUpCompleteVC.navigationItem.setHidesBackButton(true, animated: false)
+        
+        self.currentVC?.show(signUpCompleteVC, sender: nil)
+        currentVC = signUpCompleteVC
     }
     
     //MARK: - EntranceVCDelegate -
     func actiongoSignUpButtonTapped() {
         print("[UIManager] actiongoSignUpButtonTapped")
         
-        self.showSignUpVC()
+        showSignUpVC()
     }
     
     func actiongoSignInButtonTappedWithType(_ type: SIGN_IN_TYPE) {
@@ -85,7 +89,7 @@ class UIManager : EntranceVCDelegate, SignInVCDelegate{
         
         switch type {
         case .NORMAL:
-            self.showSignInVC()
+            self.showEmailSignInVC()
             break
         default:
             self.delegate?.trySignInWithType(type)
@@ -100,4 +104,20 @@ class UIManager : EntranceVCDelegate, SignInVCDelegate{
         
         signInVC.removeFromParent()
     }
+    
+    //MARK: - SignUpVCDelegate -
+    func actionSignUpConfirmedButton() {
+        print("[UIManager] actionSignUpConfirmedButton")
+        
+        showSignUpCompleteVC()
+    }
+    
+    //MARK: - SignUpCompleteVCDelegate -
+    func actionGoSignInButton() {
+        print("[UIManager] actionGoSignInButton")
+        
+        showEmailSignInVC()
+    }
+    
+    //MARK: - EmailSignInVCDelegate -
 }
