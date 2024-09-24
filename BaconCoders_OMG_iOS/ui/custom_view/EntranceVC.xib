@@ -19,7 +19,8 @@
                 <outlet property="kakaoArea" destination="ywJ-MS-EQE" id="rls-fu-nip"/>
                 <outlet property="mainContent" destination="nsf-Dq-Ree" id="vwI-wD-9fq"/>
                 <outlet property="subContent" destination="5zO-Ch-h8x" id="U3i-qT-Hlo"/>
-                <outlet property="view" destination="KYh-2h-jsK" id="Img-qr-KhT"/>
+                <outlet property="view" destination="TjZ-Kh-YC3" id="p7C-Yg-eZf"/>
+                <outlet property="viewTitle" destination="KYh-2h-jsK" id="WDQ-LZ-lcl"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
