@@ -44,14 +44,118 @@ class SignUpVC: UIViewController {
     //MARK: - property -
     var signUpVCDelegate : SignUpVCDelegate?
 
+    //MARK: - private -
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        uiInitalize()
+    }
+    
+    func uiInitalize(){
+        self.usernameWarningText.text = ""
+        self.authCodeWarningText.text = ""
+        self.passwordWarningText.text = ""
+        self.passwordRecheckWarningText.text = ""
+    }
+    
+    //MARK: - public -
+    
+    //MARK: - ui action -
+    @IBAction func actionEamilCheckBtn(_ sender: Any) {
+        print("[SignUpVC] actionEamilCheckBtn")
         
+        guard let text = usernameTextField.text else{
+            return
+        }
+        
+        if usernameTextField.text!.isValidEmail() {
+            print("validEmail")
+            usernameWarningText.text = ""
+            usernameTextField.isEnabled = false
+            usernameCheckBtn.isEnabled = false
+            
+        }else {
+            print("inValidEmail")
+            usernameWarningText.text = "warning"
+        }
+    }
+    
+    @IBAction func actionAuthenticationCodeCheckBtn(_ sender: Any) {
+        print("[SignUpVC] actionAuthenticationCodeCheckBtn")
+        
+        guard authCodeTextField.text != nil else{
+            return
+        }
+        
+        if true {
+            print("AuthenticationCode ok")
+            authCodeWarningText.text = ""
+            authCodeTextField.isEnabled = false
+            authCodeCheckBtn.isEnabled = false
+            
+        }else {
+            print("AuthenticationCode fail")
+        }
+    }
+    
+    @IBAction func writeFirstPassTextField(_ sender: Any) {
+        print("writeFirstPassTextField")
+        
+        guard passwordTextField.text != nil else{
+            return
+        }
+        
+        if passwordTextField.text!.isValidPass() {
+            print("pass vaild ok")
+            passwordWarningText.text = ""
+            
+        }else{
+            print("pass invaild")
+            passwordWarningText.text = "warning"
+        }
+        
+    }
+    
+    
+    @IBAction func writeSecondPassTextField(_ sender: Any) {
+        print("writeSecondPassTextField")
+        
+        guard passwordRecheckTextField.text != nil else{
+            return
+        }
+        
+        if passwordRecheckTextField.text!.isValidPass() {
+            print("pass vaild ok")
+            passwordRecheckWarningText.text = ""
+            
+        }else{
+            print("pass invaild")
+            passwordRecheckWarningText.text = "warning"
+        }
+    }
+    
+    @IBAction func actionAgreeCheckBox(_ sender: Any) {
+        print("actionAgreeCheckBox")
+        
+        if agreeCheckBox.isOn {
+            print("agreeCheckBox On")
+            
+        }else{
+            print("agreeCheckBox Off")
+        }
+    }
+    
+    @IBAction func actionShowConsentForm(_ sender: Any) {
+        print("actionShowConsentForm")
+    }
+    
+    @IBAction func actionEmailSignUpBtn(_ sender: Any) {
+        print("actionEmailSignUpBtn")
     }
     
     @IBAction func signUpButtonTapped(_ sender: UIButton) {
         print("[SignUpVC] signUpButtonTapped")
+        
         self.signUpVCDelegate?.actionSignUpConfirmedButton()
     }
 }

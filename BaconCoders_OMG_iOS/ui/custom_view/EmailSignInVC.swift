@@ -36,6 +36,9 @@ class EmailSignInVC: UIViewController {
         
     }
     
+    func uiInitalize(){
+        
+    }
     
     
     

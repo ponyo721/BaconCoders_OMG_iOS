@@ -42,6 +42,7 @@
 		FDBBDFD22CA1A29700FE9C38 /* SignUpCompleteVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDBBDFD12CA1A29700FE9C38 /* SignUpCompleteVC.xib */; };
 		FDBBDFD42CA1AAAE00FE9C38 /* EmailSignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBBDFD32CA1AAAE00FE9C38 /* EmailSignInVC.swift */; };
 		FDBBDFD62CA1AAC600FE9C38 /* EmailSignInVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDBBDFD52CA1AAC600FE9C38 /* EmailSignInVC.xib */; };
+		FDCB042C2CA2EA9100D4A06C /* String+valid.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCB042B2CA2EA9100D4A06C /* String+valid.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -108,6 +109,7 @@
 		FDBBDFD12CA1A29700FE9C38 /* SignUpCompleteVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpCompleteVC.xib; sourceTree = "<group>"; };
 		FDBBDFD32CA1AAAE00FE9C38 /* EmailSignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailSignInVC.swift; sourceTree = "<group>"; };
 		FDBBDFD52CA1AAC600FE9C38 /* EmailSignInVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmailSignInVC.xib; sourceTree = "<group>"; };
+		FDCB042B2CA2EA9100D4A06C /* String+valid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+valid.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +175,7 @@
 		255F54C52C3143B00004722A /* common */ = {
 			isa = PBXGroup;
 			children = (
+				FDCB042A2CA2EA7C00D4A06C /* util */,
 				255F54D52C36365D0004722A /* ui */,
 				255F54C62C3143BB0004722A /* data_model */,
 				255F54E02C37FB100004722A /* Localizable.strings */,
@@ -299,6 +302,14 @@
 				2C0CA70FE7A2704A7C5148A1 /* Pods_BaconCoders_OMG_iOSTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FDCB042A2CA2EA7C00D4A06C /* util */ = {
+			isa = PBXGroup;
+			children = (
+				FDCB042B2CA2EA9100D4A06C /* String+valid.swift */,
+			);
+			path = util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -567,6 +578,7 @@
 				25A7E8C02C3029640022C8CD /* CustomNavigationVC.swift in Sources */,
 				25A7E84E2C2FD99E0022C8CD /* SceneDelegate.swift in Sources */,
 				25A7E8BD2C3022370022C8CD /* EntranceVC.swift in Sources */,
+				FDCB042C2CA2EA9100D4A06C /* String+valid.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
