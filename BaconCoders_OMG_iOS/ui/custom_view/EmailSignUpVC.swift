@@ -1,5 +1,5 @@
 //
-//  SignUpVC.swift
+//  EmailSignUpVC.swift
 //  BaconCoders_OMG_iOS
 //
 //  Created by 박병호 on 6/29/24.
@@ -7,11 +7,11 @@
 
 import UIKit
 
-protocol SignUpVCDelegate: AnyObject {
+protocol EmailSignUpVCDelegate: AnyObject {
     func actionSignUpConfirmedButton()
 }
 
-class SignUpVC: UIViewController {
+class EmailSignUpVC: UIViewController {
 
     //MARK: - ui outlet -
     
@@ -42,7 +42,7 @@ class SignUpVC: UIViewController {
     @IBOutlet weak var signUpBtn: UIButton!
     
     //MARK: - property -
-    var signUpVCDelegate : SignUpVCDelegate?
+    var signUpVCDelegate : EmailSignUpVCDelegate?
 
     //MARK: - private -
     override func viewDidLoad() {
@@ -62,7 +62,7 @@ class SignUpVC: UIViewController {
     
     //MARK: - ui action -
     @IBAction func actionEamilCheckBtn(_ sender: Any) {
-        print("[SignUpVC] actionEamilCheckBtn")
+        print("[EmailSignUpVC] actionEamilCheckBtn")
         
         guard let text = usernameTextField.text else{
             return
@@ -81,7 +81,7 @@ class SignUpVC: UIViewController {
     }
     
     @IBAction func actionAuthenticationCodeCheckBtn(_ sender: Any) {
-        print("[SignUpVC] actionAuthenticationCodeCheckBtn")
+        print("[EmailSignUpVC] actionAuthenticationCodeCheckBtn")
         
         guard authCodeTextField.text != nil else{
             return
@@ -154,7 +154,7 @@ class SignUpVC: UIViewController {
     }
     
     @IBAction func signUpButtonTapped(_ sender: UIButton) {
-        print("[SignUpVC] signUpButtonTapped")
+        print("[EmailSignUpVC] signUpButtonTapped")
         
         self.signUpVCDelegate?.actionSignUpConfirmedButton()
     }

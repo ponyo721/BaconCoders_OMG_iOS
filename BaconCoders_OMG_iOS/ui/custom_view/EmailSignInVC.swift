@@ -8,7 +8,7 @@
 import UIKit
 
 protocol EmailSignInVCDelegate: AnyObject {
-    
+    func actionEmailSignInNavigationBackBtn()
 }
 
 class EmailSignInVC: UIViewController {
@@ -34,6 +34,10 @@ class EmailSignInVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let newBackButton : UIBarButtonItem = UIBarButtonItem(title: "Back", style: .plain, target: self, action: #selector(actionBackBtn(_:)))
+        self.navigationItem.leftBarButtonItem = newBackButton;
+        
+        print("[EmailSignInVC] viewDidLoad")
     }
     
     func uiInitalize(){
@@ -55,6 +59,12 @@ class EmailSignInVC: UIViewController {
         print("[EmailSignInVC] actionFindPassBtn")
     }
     
+    //MARK: -  -
+    
+    @objc func actionBackBtn(_ sender: UIBarButtonItem) {
+        print("[EmailSignInVC] actionBackBtn")
+        emailSignInVCDelegate?.actionEmailSignInNavigationBackBtn()
+    }
     
 }
 

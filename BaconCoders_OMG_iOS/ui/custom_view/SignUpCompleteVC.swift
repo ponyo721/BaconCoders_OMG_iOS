@@ -30,7 +30,7 @@ class SignUpCompleteVC: UIViewController {
     }
     
     @IBAction func actionSignInBtn(_ sender: Any) {
-        print("[SignUpVC] actionSignInBtn")
+        print("[EmailSignUpVC] actionSignInBtn")
         self.signUpCompleteVCDelegate?.actionGoSignInButton()
     }
 }

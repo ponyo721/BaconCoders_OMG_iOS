@@ -12,11 +12,11 @@ protocol UIManagerDelegate: AnyObject {
     func trySignInWithType(_ type:SIGN_IN_TYPE)
 }
 
-class UIManager : EntranceVCDelegate, SignUpVCDelegate, SignUpCompleteVCDelegate, EmailSignInVCDelegate{
+class UIManager : EntranceVCDelegate, EmailSignUpVCDelegate, SignUpCompleteVCDelegate, EmailSignInVCDelegate{
     var delegate : UIManagerDelegate?
     
     var entranceVC : EntranceVC?
-    let signInVC : EmailSignInVC = EmailSignInVC()
+    let emailSignInVC : EmailSignInVC = EmailSignInVC()
     
     var currentVC : UIViewController?
     
@@ -37,11 +37,15 @@ class UIManager : EntranceVCDelegate, SignUpVCDelegate, SignUpCompleteVCDelegate
     
     //MARK: - private -
     
-    func showEntranceVC() {
+    @objc func showEntranceVC() {
         print("[UIManager] showEntranceVC")
         
-        self.currentVC?.show(entranceVC!, sender: nil)
-        currentVC = entranceVC
+        let enterVC = EntranceVC()
+        enterVC.enterVCDelegate = self
+        enterVC.navigationItem.setHidesBackButton(true, animated: false)
+        
+        self.currentVC?.show(enterVC, sender: nil)
+        currentVC = enterVC
     }
     
     func showEmailSignInVC() {
@@ -51,6 +55,11 @@ class UIManager : EntranceVCDelegate, SignUpVCDelegate, SignUpCompleteVCDelegate
         emailSignInVC.emailSignInVCDelegate = self
         emailSignInVC.navigationItem.setHidesBackButton(true, animated: false)
         
+        /*
+         not work ㅠㅠ
+         */
+//        emailSignInVC.navigationItem.leftBarButtonItem?.action = #selector(showEntranceVC)
+        
         self.currentVC?.show(emailSignInVC, sender: nil)
         currentVC = emailSignInVC
     }
@@ -58,7 +67,7 @@ class UIManager : EntranceVCDelegate, SignUpVCDelegate, SignUpCompleteVCDelegate
     func showSignUpVC() {
         print("[UIManager] showSignUpVC")
         
-        let signUpVC = SignUpVC()
+        let signUpVC = EmailSignUpVC()
         signUpVC.signUpVCDelegate = self
         signUpVC.navigationItem.setHidesBackButton(true, animated: false)
         
@@ -102,10 +111,10 @@ class UIManager : EntranceVCDelegate, SignUpVCDelegate, SignUpCompleteVCDelegate
     func actionGoBack() {
         print("[UIManager] actionGoBack")
         
-        signInVC.removeFromParent()
+        emailSignInVC.removeFromParent()
     }
     
-    //MARK: - SignUpVCDelegate -
+    //MARK: - EmailSignUpVCDelegate -
     func actionSignUpConfirmedButton() {
         print("[UIManager] actionSignUpConfirmedButton")
         
@@ -120,4 +129,8 @@ class UIManager : EntranceVCDelegate, SignUpVCDelegate, SignUpCompleteVCDelegate
     }
     
     //MARK: - EmailSignInVCDelegate -
+    func actionEmailSignInNavigationBackBtn() {
+        print("[UIManager] actionEmailSignInNavigationBackBtn")
+        showEntranceVC()
+    }
 }

@@ -28,7 +28,7 @@
 		25A7E8632C2FD9A00022C8CD /* BaconCoders_OMG_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A7E8622C2FD9A00022C8CD /* BaconCoders_OMG_iOSTests.swift */; };
 		25A7E86D2C2FD9A00022C8CD /* BaconCoders_OMG_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A7E86C2C2FD9A00022C8CD /* BaconCoders_OMG_iOSUITests.swift */; };
 		25A7E86F2C2FD9A00022C8CD /* BaconCoders_OMG_iOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A7E86E2C2FD9A00022C8CD /* BaconCoders_OMG_iOSUITestsLaunchTests.swift */; };
-		25A7E87F2C2FDC4A0022C8CD /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A7E87E2C2FDC4A0022C8CD /* SignUpVC.swift */; };
+		25A7E87F2C2FDC4A0022C8CD /* EmailSignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A7E87E2C2FDC4A0022C8CD /* EmailSignUpVC.swift */; };
 		25A7E8BD2C3022370022C8CD /* EntranceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A7E8BC2C3022370022C8CD /* EntranceVC.swift */; };
 		25A7E8C02C3029640022C8CD /* CustomNavigationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A7E8BF2C3029640022C8CD /* CustomNavigationVC.swift */; };
 		25A7E8C22C30297A0022C8CD /* CustomNavigationVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25A7E8C12C30297A0022C8CD /* CustomNavigationVC.xib */; };
@@ -37,7 +37,7 @@
 		672D7BC2A80129334768C72C /* Pods_BaconCoders_OMG_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C0CA70FE7A2704A7C5148A1 /* Pods_BaconCoders_OMG_iOSTests.framework */; };
 		A78DEE450A61C734A4B8746A /* Pods_BaconCoders_OMG_iOS_BaconCoders_OMG_iOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE833A7074A57B444C861F68 /* Pods_BaconCoders_OMG_iOS_BaconCoders_OMG_iOSUITests.framework */; };
 		FDBBDFCC2CA0723B00FE9C38 /* NavigationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBBDFCB2CA0723B00FE9C38 /* NavigationVC.swift */; };
-		FDBBDFCE2CA19AF200FE9C38 /* SignUpVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDBBDFCD2CA19AF200FE9C38 /* SignUpVC.xib */; };
+		FDBBDFCE2CA19AF200FE9C38 /* EmailSignUpVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDBBDFCD2CA19AF200FE9C38 /* EmailSignUpVC.xib */; };
 		FDBBDFD02CA1A1BB00FE9C38 /* SignUpCompleteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBBDFCF2CA1A1BB00FE9C38 /* SignUpCompleteVC.swift */; };
 		FDBBDFD22CA1A29700FE9C38 /* SignUpCompleteVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDBBDFD12CA1A29700FE9C38 /* SignUpCompleteVC.xib */; };
 		FDBBDFD42CA1AAAE00FE9C38 /* EmailSignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBBDFD32CA1AAAE00FE9C38 /* EmailSignInVC.swift */; };
@@ -89,7 +89,7 @@
 		25A7E8682C2FD9A00022C8CD /* BaconCoders_OMG_iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BaconCoders_OMG_iOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		25A7E86C2C2FD9A00022C8CD /* BaconCoders_OMG_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaconCoders_OMG_iOSUITests.swift; sourceTree = "<group>"; };
 		25A7E86E2C2FD9A00022C8CD /* BaconCoders_OMG_iOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaconCoders_OMG_iOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		25A7E87E2C2FDC4A0022C8CD /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
+		25A7E87E2C2FDC4A0022C8CD /* EmailSignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailSignUpVC.swift; sourceTree = "<group>"; };
 		25A7E8BC2C3022370022C8CD /* EntranceVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntranceVC.swift; sourceTree = "<group>"; };
 		25A7E8BF2C3029640022C8CD /* CustomNavigationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationVC.swift; sourceTree = "<group>"; };
 		25A7E8C12C30297A0022C8CD /* CustomNavigationVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomNavigationVC.xib; sourceTree = "<group>"; };
@@ -104,7 +104,7 @@
 		8DA867FF33D49C758F9BF874 /* Pods-BaconCoders_OMG_iOS-BaconCoders_OMG_iOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaconCoders_OMG_iOS-BaconCoders_OMG_iOSUITests.debug.xcconfig"; path = "Target Support Files/Pods-BaconCoders_OMG_iOS-BaconCoders_OMG_iOSUITests/Pods-BaconCoders_OMG_iOS-BaconCoders_OMG_iOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		EE833A7074A57B444C861F68 /* Pods_BaconCoders_OMG_iOS_BaconCoders_OMG_iOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BaconCoders_OMG_iOS_BaconCoders_OMG_iOSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDBBDFCB2CA0723B00FE9C38 /* NavigationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationVC.swift; sourceTree = "<group>"; };
-		FDBBDFCD2CA19AF200FE9C38 /* SignUpVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpVC.xib; sourceTree = "<group>"; };
+		FDBBDFCD2CA19AF200FE9C38 /* EmailSignUpVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmailSignUpVC.xib; sourceTree = "<group>"; };
 		FDBBDFCF2CA1A1BB00FE9C38 /* SignUpCompleteVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpCompleteVC.swift; sourceTree = "<group>"; };
 		FDBBDFD12CA1A29700FE9C38 /* SignUpCompleteVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpCompleteVC.xib; sourceTree = "<group>"; };
 		FDBBDFD32CA1AAAE00FE9C38 /* EmailSignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailSignInVC.swift; sourceTree = "<group>"; };
@@ -286,8 +286,8 @@
 				255F54D12C324EC50004722A /* EntranceVC.xib */,
 				FDBBDFD32CA1AAAE00FE9C38 /* EmailSignInVC.swift */,
 				FDBBDFD52CA1AAC600FE9C38 /* EmailSignInVC.xib */,
-				25A7E87E2C2FDC4A0022C8CD /* SignUpVC.swift */,
-				FDBBDFCD2CA19AF200FE9C38 /* SignUpVC.xib */,
+				25A7E87E2C2FDC4A0022C8CD /* EmailSignUpVC.swift */,
+				FDBBDFCD2CA19AF200FE9C38 /* EmailSignUpVC.xib */,
 				FDBBDFCF2CA1A1BB00FE9C38 /* SignUpCompleteVC.swift */,
 				FDBBDFD12CA1A29700FE9C38 /* SignUpCompleteVC.xib */,
 			);
@@ -429,7 +429,7 @@
 				255F54E22C37FB100004722A /* Localizable.strings in Resources */,
 				255F54DE2C363A9C0004722A /* TestVC.xib in Resources */,
 				25A7E8582C2FD9A00022C8CD /* Base in Resources */,
-				FDBBDFCE2CA19AF200FE9C38 /* SignUpVC.xib in Resources */,
+				FDBBDFCE2CA19AF200FE9C38 /* EmailSignUpVC.xib in Resources */,
 				FDBBDFD22CA1A29700FE9C38 /* SignUpCompleteVC.xib in Resources */,
 				25A7E8C22C30297A0022C8CD /* CustomNavigationVC.xib in Resources */,
 			);
@@ -567,7 +567,7 @@
 				25A7E8C42C312BE60022C8CD /* OMGManager.swift in Sources */,
 				25A7E84C2C2FD99E0022C8CD /* AppDelegate.swift in Sources */,
 				25A7E8C62C312BEF0022C8CD /* UIManager.swift in Sources */,
-				25A7E87F2C2FDC4A0022C8CD /* SignUpVC.swift in Sources */,
+				25A7E87F2C2FDC4A0022C8CD /* EmailSignUpVC.swift in Sources */,
 				255F54D72C36366A0004722A /* CommonPushBtnVC.swift in Sources */,
 				255F54C82C3143C40004722A /* UserData.swift in Sources */,
 				255F54C42C313F5C0004722A /* HTTPClient.swift in Sources */,
